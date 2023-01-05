@@ -12,7 +12,6 @@ import store from './store';
 
 import ErrorBoundary from './components/common/error-boundary';
 import Root from './components/root';
-import Home from './components/home';
 import LandingPage from './landing-page/root';
 
 /******************************************/
