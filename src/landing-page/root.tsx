@@ -1,7 +1,7 @@
 /* ****** CAA Imports ****** */
 // UI
 import Header from '../components/header';
-import Example from './body';
+import Example from './example';
 // Logic
 
 /* ****** Other Imports ****** */
