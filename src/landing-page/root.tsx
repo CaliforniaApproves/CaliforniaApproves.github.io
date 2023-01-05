@@ -1,6 +1,7 @@
 /* ****** CAA Imports ****** */
 // UI
 import Header from '../components/header';
+import Example from './body';
 // Logic
 
 /* ****** Other Imports ****** */
@@ -24,6 +25,7 @@ const LandingPage = ({}: MyProps) => {
     return (
         <div>
             <Header />
+            <Example />
         </div>
     );
 }
