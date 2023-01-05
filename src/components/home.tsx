@@ -30,7 +30,7 @@ class Home extends React.Component<MyProps, MyState> {
             <div className="home-container">
                 <div className="home-title-container">
                     <div className="home-title-side-midline"><div></div></div>
-                    <div className="home-title text-schist" title="LASO is LAboratory SOftware!">Maestro</div>
+                    <div className="home-title text-schist" title="CA Approves!">CA Approves</div>
                     <div className="home-logo-bg-container"><LasoLogo/></div>
                 </div>
                 <div className="home-app-columns">

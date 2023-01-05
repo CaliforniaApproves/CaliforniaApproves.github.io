@@ -1,4 +1,4 @@
-@import '@twist/nucleic-ui-components/assets/styles/common.css';
+@import './assets/stylesheets/common.css';
 
 body {
     margin: 0;

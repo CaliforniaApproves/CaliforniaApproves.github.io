@@ -4,7 +4,6 @@ import ErrorToast from './common/error-toast';
 import { withRouter } from "react-router-dom";
 
 /* ****** Assets ****** */
-import '../assets/stylesheets/common/main.scss';
 import { AppReducer } from '../reducers/root';
 
 
@@ -41,6 +40,7 @@ class Root extends React.Component<MyProps, MyState> {
                 <div className="error-log">
                     {this.props.errors.map((error: any, index: number) => <ErrorToast key={index} error={error} index={index} />)}
                 </div>
+                {this.props.children}
             </div>
         );
     }

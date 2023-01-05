@@ -4,4 +4,9 @@
         , "flags": {}
         , "domain": ""
     }
+    , "production": {
+        "api": {}
+        , "flags": {}
+        , "domain": ""
+    }
 }

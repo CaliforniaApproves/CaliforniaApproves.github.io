@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import React, { Fragment } from 'react'
 import { Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/solid'
+import { XMarkIcon } from '@heroicons/react/24/outline'
 
 const ErrorToast = ({ error, index, toggleErrorToast }: any) => (
 	<div className={classnames({ 'hidden': !error.show })}>
@@ -29,7 +29,7 @@ const ErrorToast = ({ error, index, toggleErrorToast }: any) => (
 						<div className="p-2.5">
 							<div className="flex items-start">
 								<div className="mt-1 flex-shrink-0">
-									<XIcon className="h-5 w-5 text-error-medium" aria-hidden="true" />
+									<XMarkIcon className="h-5 w-5 text-error-medium" aria-hidden="true" />
 								</div>
 								<div className="ml-2.5 w-0 flex-1 pt-0.5 text-schist">
 									<span className="text-sm font-medium">{error.title}</span> <br />
@@ -41,7 +41,7 @@ const ErrorToast = ({ error, index, toggleErrorToast }: any) => (
 										onClick={() => toggleErrorToast({ index })}
 									>
 										<span className="sr-only">Close</span>
-										<XIcon className="h-4 w-4" aria-hidden="true" />
+										<XMarkIcon className="h-4 w-4" aria-hidden="true" />
 									</button>
 								</div>
 							</div>

@@ -1,12 +1,12 @@
 import settings from '../settings.json';
 
-let appEnv = import.meta.env.VITE_APP_ENV;
+const appEnv = import.meta.env.VITE_APP_ENV || "development";
 
 const host = window.location.host
 
-if(host.includes(settings["production"].domain.replaceAll('https://', ''))) {
-    appEnv = "production";
-}
+// if(host.includes(settings["production"].domain.replaceAll('https://', ''))) {
+//     appEnv = "production";
+// }
 
 const env = appEnv || 'development';
 const api = settings[env].api;
