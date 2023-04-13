@@ -4,8 +4,7 @@ const themeColors = {
     transparent: 'transparent'
     , current: 'currentColor'
     , white: '#fff'
-    , black: '#000'
-    , surface: 'var(--bg-surface-default)'
+    , black: 'var(--color-schist-higher)'
     , schist: {
         higher: 'var(--color-schist-higher)'
         , high: 'var(--color-schist-high)'
@@ -31,6 +30,9 @@ const themeColors = {
 
 const themeExtensions = {
     colors: themeColors
+    , textColor: themeColors
+    , backgroundColor: themeColors
+    , borderColor: themeColors
 };
 
 module.exports = {
@@ -39,6 +41,13 @@ module.exports = {
     , theme: {
         extend: {
             ...themeExtensions
+            , fontSize: {
+                bsm: ['20px', '20px']
+                , bsl: ['22px', '26px']
+            }
+            , fontFamily: {
+                darker: ['Darker Grotesque']
+            }
         }
     }
     , plugins: [

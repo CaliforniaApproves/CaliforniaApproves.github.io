@@ -25,6 +25,3 @@
         --bg-overlay-error: 239, 68, 68, 0.25;
     }
 }
-.modal {
-    @apply text-schist fixed z-[75] inset-0 overflow-y-auto;
-}

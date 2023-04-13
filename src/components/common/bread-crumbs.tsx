@@ -13,7 +13,7 @@ import React from 'react'
 import classnames from 'classnames';
 
 /* ****** Assets ****** */
-import { ChevronRightIcon } from '@heroicons/react/solid'
+import { ChevronRightIcon } from '@heroicons/react/24/solid'
 
 /* ****** Constants ****** */
 // Imported
