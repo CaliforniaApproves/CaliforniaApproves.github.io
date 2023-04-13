@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
     BrowserRouter as Router
-    , Switch
+    , Routes
     , Route
 } from "react-router-dom";
 
@@ -30,11 +30,9 @@ export default class App extends React.Component {
                 <Router>
                     <ErrorBoundary>
                         <Root>
-                            <Switch>
-                                <Route path="/">
-                                    <LandingPage />
-                                </Route>
-                            </Switch>
+                            <Routes>
+                                <Route path="/" element={<LandingPage />}/>
+                            </Routes>
                         </Root>
                     </ErrorBoundary>
                 </Router>

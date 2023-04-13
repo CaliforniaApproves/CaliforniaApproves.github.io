@@ -1,7 +1,7 @@
 import { connect, ConnectedProps } from 'react-redux';
 import React from 'react';
 import ErrorToast from './common/error-toast';
-import { withRouter } from "react-router-dom";
+import { PropsWithChildren } from 'react'
 
 /* ****** Assets ****** */
 import { AppReducer } from '../reducers/root';
@@ -23,13 +23,9 @@ const connector = connect(mapStateToProps, mapDispatchToProps);
 
 type PropsFromRedux = ConnectedProps<typeof connector>;
 
-type MyProps = PropsFromRedux & {
-    location: any
-}
-type MyState = {
-};
+type MyProps = PropsFromRedux;
 
-class Root extends React.Component<MyProps, MyState> {
+class Root extends React.Component<PropsWithChildren<MyProps>> {
     constructor(props: MyProps) {
         super(props);
     }
@@ -45,4 +41,4 @@ class Root extends React.Component<MyProps, MyState> {
         );
     }
 }
-export default withRouter(connector(Root));
+export default connector(Root);
