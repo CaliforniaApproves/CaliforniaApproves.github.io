@@ -56,7 +56,7 @@ const Header = () => {
                 <div className="flex justify-start items-center lg:w-0 lg:flex-1">
                     <a href="#" className='mr-4'>
                         <span className="sr-only">CA Approves</span>
-                        <Logo className='w-52'/>
+                        <Logo className='w-56'/>
                     </a>
                     <Link to='#' color="green" className='mx-4'><h5>ABOUT</h5></Link>
                     <Link to='#' color="green" className='mx-4'><h5>ARTICLES</h5></Link>
@@ -67,7 +67,7 @@ const Header = () => {
                                     <Popover.Button
                                         className={classNames(
                                         open ? 'text-gray-900' : 'text-gray-500',
-                                        'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                                        'group inline-flex items-center rounded-md bg-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple focus:ring-offset-2'
                                         )}
                                     >
                                         <h5 className='text-green whitespace-nowrap'>APPROVAL 101</h5>
@@ -98,7 +98,7 @@ const Header = () => {
                                                     href={item.href}
                                                     className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                                                 >
-                                                    <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                                                    <item.icon className="h-6 w-6 flex-shrink-0 text-purple" aria-hidden="true" />
                                                     <div className="ml-4">
                                                         <p className="text-base font-medium text-gray-900">{item.name}</p>
                                                         <p className="mt-1 text-sm text-gray-500">{item.description}</p>
