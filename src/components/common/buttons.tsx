@@ -35,7 +35,7 @@ export const NavButton = ({variant, color, size='sm', link, children, className=
         navigate(link)
     }
     const classNames = classnames(
-        'caa-button rounded-2xl px-4 py-2 uppercase flex items-center text-center tracking-[-0.01rem] justify-center font-extrabold'
+        'caa-button rounded-2xl px-4 py-2 uppercase flex text-center tracking-[-0.01rem] justify-center font-extrabold'
         , {
             'text-white': variant === 'solid'
             , 'border-[6px]': variant === 'outlined'

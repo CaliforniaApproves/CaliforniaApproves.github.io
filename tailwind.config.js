@@ -57,12 +57,12 @@ module.exports = {
         , require('@tailwindcss/aspect-ratio')
         , plugin(function ({ addBase, theme }) {
             addBase({
-                'h1': { fontSize: '2.5rem' }
-                , 'h2': { fontSize: '2rem' }
-                , 'h3': { fontSize: '1.75rem' }
-                , 'h4': { fontSize: '1.5rem' }
-                , 'h5': { fontSize: '1.25rem' }
-                , 'h6': { fontSize: '1rem' }
+                'h1': { fontSize: '4rem', fontWeight: 700 }
+                , 'h2': { fontSize: '3rem', fontWeight: 700 }
+                , 'h3': { fontSize: '2.5rem', fontWeight: 700 }
+                , 'h4': { fontSize: '2rem', fontWeight: 700 }
+                , 'h5': { fontSize: '1.5rem', fontWeight: 700 }
+                , 'h6': { fontSize: '1rem', fontWeight: 700 }
             });
         })
     ]

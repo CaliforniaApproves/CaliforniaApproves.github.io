@@ -1,6 +1,7 @@
 /* ****** CAA Imports ****** */
 // UI
 import { NavButton } from './common/buttons';
+import Link from './common/links';
 
 // Logic
 
@@ -65,12 +66,8 @@ const Header = () => {
                     </Popover.Button>
                 </div>
 
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                    About
-                </a>
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                    Articles
-                </a>
+                <Link to='#' color="green"><h5>About</h5></Link>
+                <Link to='#' color="green"><h5>Articles</h5></Link>
                 <Popover.Group as="nav" className="hidden space-x-10 md:flex">
                     <Popover className="relative">
                     {({ open }) => (
@@ -81,7 +78,7 @@ const Header = () => {
                             'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                             )}
                         >
-                            <span>Approval 101</span>
+                            <h5 className='text-green'>Approval 101</h5>
                             <ChevronDownIcon
                             className={classNames(
                                 open ? 'text-gray-600' : 'text-gray-400',
@@ -137,9 +134,7 @@ const Header = () => {
                     )}
                     </Popover>
 
-                    <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                        Contact
-                    </a>
+                    <Link to='#' color="green"><h5>Contact</h5></Link>
                 </Popover.Group>
                 <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
                     <NavButton
