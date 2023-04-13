@@ -4,182 +4,25 @@
 
 @layer base {
     :root {
-        --color-schist-higher: #000000;
-        --color-schist-high: #374151;
-        --color-schist-medium: #6b7280;
-        --color-schist-default: #9ca3af;
-        --color-schist-low: #f4f6fa;
-        --color-schist-lower: #f9fafb;
+        --color-schist-higher: #27272B;
+        --color-schist-high: #66666E;
+        --color-schist-medium: #9999A1;
+        --color-schist-default: #E6E6E9;
+        --color-schist-low: #f4f4f6;
+        --color-schist-lower: #ffffff;
 
-        --color-primary-high: #0f766e;
-        --color-primary-medium: #14b8a6;
-        --color-primary-default: #2dd4bf;
-        --color-primary-low: #e1f7f3;
-        --color-primary-lower: #f0fdfa;
+        --color-green-default: #283620;
 
-        --color-secondary-high: #7818c2;
-        --color-secondary-medium: #a649f0;
-        --color-secondary-default: #c477ff;
-        --color-secondary-low: #f3e7fc;
-        --color-secondary-lower: #f8f2fd;
+        --color-purple-default: #8956ff;
 
-        --color-warning-high: #b45309;
-        --color-warning-medium: #f59e0b;
-        --color-warning-default: #fbbf24;
-        --color-warning-low: #fef3c7;
-        --color-warning-lower: #fffbeb;
+        --color-orange-default: #f16200;
+        --color-orange-accent: #d47739;
 
-        --color-error-high: #b91c1c;
-        --color-error-medium: #ef4444;
-        --color-error-default: #f87171;
-        --color-error-low: #fee2e2;
-        --color-error-lower: #fef2f2;
-
-        --color-success-high: #047857;
-        --color-success-medium: #10b981;
-        --color-success-default: #34d399;
-        --color-success-low: #d1fae5;
-        --color-success-lower: #ecfdf5;
-
-        --text-schist-high: #191e27;
-        --text-schist-medium: #374151;
-        --text-schist-default: #6b7280;
-        --text-schist-low: #9ca3af;
-        --text-schist-inverted: #ffffff;
-
-        --text-primary-high: #0f766e;
-        --text-primary-medium: #0d9488;
-        --text-primary-default: #14b8a6;
-
-        --text-warning-high: #92400e;
-        --text-warning-medium: #b45309;
-
-        --text-error-high: #991b1b;
-        --text-error-medium: #b91c1c;
-
-        --bg-surface-higher: #e1e6ed;
-        --bg-surface-high: #ffffff;
-        --bg-surface-medium: #f9fafb;
-        --bg-surface-default: #f4f6fa;
-        --bg-surface-inverted: #191e27;
-
-        --bg-surface-true-dark: #121212;
-        --bg-surface-true-light: #f4f6fa;
-
-        --bg-primary-medium: #0f766e;
-        --bg-primary-default: #0d9488;
-        --bg-primary-low: #14b8a6;
-        --bg-primary-lower: #2dd4bf;
-
-        --bg-secondary-medium: #a649f0;
-        --bg-secondary-default: #c477ff;
-        --bg-secondary-low: #dbaefe;
-
-        --bg-success-medium: #059669;
-        --bg-success-default: #10b981;
-
-        --bg-warning-medium: #d97706;
-        --bg-warning-default: #f59e0b;
-
-        --bg-error-medium: #dc2626;
-        --bg-error-default: #ef4444;
-
-        --border-outline-medium: #cad1db;
-        --border-outline-default: #e1e6ed;
-
-        --border-primary-default: #14b8a6;
-
-        --border-error-default: #ef4444;
+        --color-tan-default: #fecb8b;
 
         --bg-overlay: 0, 0, 0, 0.5;
 
         --bg-overlay-error: 239, 68, 68, 0.25;
-    }
-
-    .dark {
-        --color-schist-higher: #ffffff;
-        --color-schist-high: #9ca3af;
-        --color-schist-medium: #6b7280;
-        --color-schist-default: #4b5563;
-        --color-schist-low: #242c37;
-        --color-schist-lower: #191e27;
-
-        --color-primary-high: #2dd4bf;
-        --color-primary-medium: #14b8a6;
-        --color-primary-default: #0d9488;
-        --color-primary-low: #115e59;
-        --color-primary-lower: #134e4a;
-
-        --color-secondary-high: #c477ff;
-        --color-secondary-medium: #a649f0;
-        --color-secondary-default: #8f28de;
-        --color-secondary-low: #63179d;
-        --color-secondary-lower: #551883;
-
-        --color-warning-high: #fbbf24;
-        --color-warning-medium: #f59e0b;
-        --color-warning-default: #d97706;
-        --color-warning-low: #92400e;
-        --color-warning-lower: #78350f;
-
-        --color-error-high: #f87171;
-        --color-error-medium: #ef4444;
-        --color-error-default: #dc2626;
-        --color-error-low: #991b1b;
-        --color-error-lower: #7f1d1d;
-
-        --color-success-high: #34d399;
-        --color-success-medium: #10b981;
-        --color-success-default: #059669;
-        --color-success-low: #065f46;
-        --color-success-lower: #064e3b;
-
-        --text-schist-high: #ffffff;
-        --text-schist-medium: #f4f6fa;
-        --text-schist-default: #cad1db;
-        --text-schist-low: #6b7280;
-        --text-schist-inverted: #191e27;
-
-        --text-primary-high: #2dd4bf;
-        --text-primary-medium: #14b8a6;
-        --text-primary-default: #0d9488;
-
-        --text-warning-high: #fcd34d;
-        --text-warning-medium: #fbbf24;
-
-        --text-error-high: #fca5a5;
-        --text-error-medium: #f87171;
-
-        --bg-surface-higher: #374151;
-        --bg-surface-high: #242c37;
-        --bg-surface-medium: #191e27;
-        --bg-surface-default: #121212;
-        --bg-surface-inverted: #ffffff;
-
-        --bg-primary-medium: #2dd4bf;
-        --bg-primary-default: #14b8a6;
-        --bg-primary-low: #0d9488;
-        --bg-primary-lower: #0f766e;
-
-        --bg-secondary-medium: #c477ff;
-        --bg-secondary-default: #a649f0;
-        --bg-secondary-low: #8f28de;
-
-        --bg-success-medium: #10b981;
-        --bg-success-default: #34d399;
-
-        --bg-warning-medium: #d97706;
-        --bg-warning-default: #f59e0b;
-
-        --bg-error-medium: #dc2626;
-        --bg-error-default: #ef4444;
-
-        --border-outline-medium: #6b7280;
-        --border-outline-default: #4b5563;
-
-        --border-primary-default: #5eead4;
-
-        --border-error-default: #fca5a5;
     }
 }
 .modal {
