@@ -64,8 +64,10 @@ module.exports = {
                 , "large-bold": ['26px', {
                     lineHeight: '32px'
                     , letter: '-1%'
-                    , fontWeight: '400',
+                    , fontWeight: '500',
                 }]
+                , bsm: ['20px', '20px']
+                , bsl: ['22px', '26px']
             }
             , fontFamily: {
                 darker: ['Darker Grotesque']

@@ -21,21 +21,21 @@ type ButtonVariant = 'solid'|'outlined'|'text';
 type ButtonColor = 'orange'|'purple'|'green'|'black';
 type ButtonSize = 'sm'|'lg';
 
-type NavButtonProps = {
+type ButtonProps = {
     variant: ButtonVariant;
     color: ButtonColor;
     size?: ButtonSize
-    link: string;
     className?: string;
+}
+
+type ActionButtonProps = ButtonProps & {
+    onClick: () => void;
 };
 
-export const NavButton = ({variant, color, size='sm', link, children, className=''}: PropsWithChildren<NavButtonProps>) => {
-    const navigate = useNavigate();
-    const onClick = () => {
-        navigate(link)
-    }
+export const ActionButton = ({variant, color, size='sm', onClick, children, className=''}: PropsWithChildren<ActionButtonProps>) => {
+
     const classNames = classnames(
-        'caa-button rounded-2xl px-4 py-2 uppercase flex text-center tracking-[-0.01rem] justify-center font-extrabold cursor-pointer'
+        'caa-button rounded-2xl px-4 py-2 uppercase flex text-center tracking-[-0.01rem] justify-center items-center font-extrabold cursor-pointer'
         , {
             'text-white': variant === 'solid'
             , 'border-[6px]': variant === 'outlined'
@@ -45,10 +45,10 @@ export const NavButton = ({variant, color, size='sm', link, children, className=
             , 'bg-purple hover:bg-purple-high': variant === 'solid' && color === 'purple'
             , 'bg-green hover:bg-green-high': variant === 'solid' && color === 'purple'
             , 'bg-black hover:bg-schist-high': variant === 'solid' && color === 'black'
-            , 'border-orange': variant === 'outlined' && color === 'orange'
-            , 'border-purple': variant === 'outlined' && color === 'purple'
-            , 'border-green': variant === 'outlined' && color === 'purple'
-            , 'border-black': variant === 'outlined' && color === 'black'
+            , 'border-orange hover:border-orange-high': variant === 'outlined' && color === 'orange'
+            , 'border-purple hover:border-purple-high': variant === 'outlined' && color === 'purple'
+            , 'border-green hover:border-green-high': variant === 'outlined' && color === 'purple'
+            , 'border-black hover:border-schist-high': variant === 'outlined' && color === 'black'
             , 'text-orange': variant === 'text' && color === 'orange'
             , 'text-purple': variant === 'text' && color === 'purple'
             , 'text-green': variant === 'text' && color === 'purple'
@@ -64,5 +64,21 @@ export const NavButton = ({variant, color, size='sm', link, children, className=
         <div className={classNames} onClick={onClick}>
             {children}
         </div>
+    );
+}
+
+type NavButtonProps = ButtonProps & {
+    link: string;
+};
+
+export const NavButton = ({variant, color, size='sm', link, children, className=''}: PropsWithChildren<NavButtonProps>) => {
+    const navigate = useNavigate();
+    const onClick = () => {
+        navigate(link)
+    }
+    return (
+        <ActionButton className={className} onClick={onClick} variant={variant} color={color} size={size}>
+            {children}
+        </ActionButton>
     );
 }

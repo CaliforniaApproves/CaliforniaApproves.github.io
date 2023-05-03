@@ -11,6 +11,7 @@ import Example from './example';
 // Logic
 import React from 'react'
 import update from 'immutability-helper';
+import Banner from './banner';
 
 /* ****** Assets ****** */
 
@@ -24,6 +25,7 @@ const LandingPage = () => {
     return (
         <div>
             <Header />
+            <Banner/>
             <Example />
             <Footer />
         </div>

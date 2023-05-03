@@ -1,5 +1,6 @@
 /* ****** CAA Imports ****** */
 // UI
+import MailingForm from './mailing-form';
 
 // Logic
 
@@ -11,18 +12,40 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
+import strongArm from '../assets/images/Strong-Arm 1.png';
 
 /* ****** Constants ****** */
 // Imported
+import { ReactComponent as Arrow } from '../assets/icons/Long-Arrow.svg';
+import Background from '../assets/images/Group-39.svg';
 
 // Generated
-type BannerProps = {
-};
 
 // create a component
-const Banner = ({}: PropsWithChildren<BannerProps>) => {
+const Banner = () => {
     return (
-        <div>
+        <div
+            className="caa-home-page-banner w-full flex flex-row items-center justify-center py-[30px]"
+            style={{
+                backgroundImage: `url(${Background})`
+                , backgroundSize: 'cover'
+                , backgroundRepeat: 'no-repeat'
+              }}
+        >
+            <div className='m-auto'>
+                <img src={strongArm} alt="strong arm"/>
+                <h1 className='no-wrap'>The <span className='text-purple'>Easiest</span> Way To Make</h1>
+                <h1>The <span className='text-purple'>Biggest</span> Impact</h1>
+                <div className='static max-w-[500px]'>
+                    <Arrow className='absolute'/>
+                    <p className='text-large-bold flex flex-row indent-24'>
+                        Approval voting gives voters the power to support multiple candidates equally so that stronger representatives with broad support are always elected.
+                    </p>
+                </div>
+            </div>
+            <div className='py-[90px] max-w-[40%] m-auto'>
+              <MailingForm />
+            </div>
         </div>
     );
 }
