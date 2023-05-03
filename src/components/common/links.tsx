@@ -1,4 +1,4 @@
-/* ****** Twist Imports ****** */
+/* ****** CAA Imports ****** */
 // UI
 
 // Logic
@@ -18,7 +18,7 @@ import classnames from 'classnames';
 // Imported
 
 // Generated
-type LinkColor = 'orange'|'purple'|'green'|'black';
+type LinkColor = 'orange'|'purple'|'green'|'black'|'white';
 
 type CaaLinkProps = {
     className?: string;
@@ -35,6 +35,7 @@ const CaaLink = ({to, children, color, className=''}: PropsWithChildren<CaaLinkP
             , 'text-purple hover:text-purple-high': color === 'purple'
             , 'text-green hover:text-green-high': color === 'green'
             , 'text-black hover:text-schist-high': color === 'black'
+            , 'text-white hover:text-schist-low': color === 'white'
         }
         , className
     )

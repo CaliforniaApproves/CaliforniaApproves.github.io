@@ -24,7 +24,7 @@ const MailingForm = () => {
     const [email, setEmail] = useState<string>('');
     return (
         <div className='bg-white border-purple rounded-[50px] border-[6px] p-12 text-center flex flex-col items-center'>
-            <h2 className='truncate'>
+            <h2 className='truncate text-green'>
                 Bring Approval <br/>Voting To California
             </h2>
             <p className='text-small'>

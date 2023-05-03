@@ -30,12 +30,12 @@ const Banner = () => {
                 backgroundImage: `url(${Background})`
                 , backgroundSize: 'cover'
                 , backgroundRepeat: 'no-repeat'
-              }}
+            }}
         >
             <div className='m-auto'>
                 <img src={strongArm} alt="strong arm"/>
-                <h1 className='no-wrap'>The <span className='text-purple'>Easiest</span> Way To Make</h1>
-                <h1>The <span className='text-purple'>Biggest</span> Impact</h1>
+                <h1 className='no-wrap text-green'>The <span className='text-purple'>Easiest</span> Way To Make</h1>
+                <h1 className='text-green'>The <span className='text-purple'>Biggest</span> Impact</h1>
                 <div className='static max-w-[500px]'>
                     <Arrow className='absolute'/>
                     <p className='text-large-bold flex flex-row indent-24'>

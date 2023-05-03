@@ -2,7 +2,12 @@
 // UI
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Example from './example';
+import Banner from './banner';
+import Video from './video';
+import AboutApproval from './approval';
+import AboutUs from './about';
+import Quotes from './quotes';
+
 // Logic
 
 /* ****** Other Imports ****** */
@@ -11,7 +16,6 @@ import Example from './example';
 // Logic
 import React from 'react'
 import update from 'immutability-helper';
-import Banner from './banner';
 
 /* ****** Assets ****** */
 
@@ -26,7 +30,10 @@ const LandingPage = () => {
         <div>
             <Header />
             <Banner/>
-            <Example />
+            <Video/>
+            <AboutApproval/>
+            <AboutUs/>
+            <Quotes />
             <Footer />
         </div>
     );
