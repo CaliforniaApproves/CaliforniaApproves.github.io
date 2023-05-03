@@ -31,10 +31,10 @@ const CaaLink = ({to, children, color, className=''}: PropsWithChildren<CaaLinkP
     const classNames = classnames(
         'caa-link'
         , {
-            'text-orange': color === 'orange'
-            , 'text-purple': color === 'purple'
-            , 'text-green': color === 'green'
-            , 'text-black': color === 'black'
+            'text-orange hover:text-orange-high': color === 'orange'
+            , 'text-purple hover:text-purple-high': color === 'purple'
+            , 'text-green hover:text-green-high': color === 'green'
+            , 'text-black hover:text-schist-high': color === 'black'
         }
         , className
     )

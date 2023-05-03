@@ -1,15 +1,13 @@
 /* ****** CAA Imports ****** */
 // UI
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Example from './example';
+
 // Logic
 
 /* ****** Other Imports ****** */
 // UI
 
 // Logic
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
@@ -18,17 +16,16 @@ import update from 'immutability-helper';
 // Imported
 
 // Generated
+type BannerProps = {
+};
 
 // create a component
-const LandingPage = () => {
+const Banner = ({}: PropsWithChildren<BannerProps>) => {
     return (
         <div>
-            <Header />
-            <Example />
-            <Footer />
         </div>
     );
 }
 
 //make this component available to the app
-export default LandingPage
+export default Banner

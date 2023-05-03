@@ -18,8 +18,7 @@ import update from 'immutability-helper';
 /* ****** Constants ****** */
 // Imported
 import {
-     Bars3Icon
-    , QuestionMarkCircleIcon
+     QuestionMarkCircleIcon
     , PlayIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -42,7 +41,7 @@ const education: MenuDropDown[] = [
 ]
   const callsToAction = [
     { name: 'Watch Intro', href: '#', icon: PlayIcon }
-  ,] 
+  ]
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
   }
@@ -53,7 +52,7 @@ const Header = () => {
         <Popover className="bg-white sticky top-0 z-30">
             <div className="mx-auto max-w-7xl">
                 <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-                <div className="flex justify-start items-center lg:w-0 lg:flex-1">
+                <div className="flex justify-start items-center lg:flex-1">
                     <a href="#" className='mr-4'>
                         <span className="sr-only">CA Approves</span>
                         <Logo className='w-56'/>
@@ -70,7 +69,7 @@ const Header = () => {
                                         'group inline-flex items-center rounded-md bg-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple focus:ring-offset-2'
                                         )}
                                     >
-                                        <h5 className='text-green whitespace-nowrap'>APPROVAL 101</h5>
+                                        <h5 className='text-green hover:text-green-high whitespace-nowrap'>APPROVAL 101</h5>
                                         <ChevronDownIcon
                                         className={classNames(
                                             open ? 'text-gray-600' : 'text-gray-400',
@@ -113,7 +112,7 @@ const Header = () => {
                                                     href={item.href}
                                                     className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
                                                 >
-                                                    <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                                                    <item.icon className="h-6 w-6 flex-shrink-0 text-purple" aria-hidden="true" />
                                                     <span className="ml-3">{item.name}</span>
                                                 </a>
                                                 </div>
@@ -128,7 +127,7 @@ const Header = () => {
                     </Popover.Group>
                     <Link to='#' color="green" className='mx-4'><h5>CONTACT</h5></Link>
                 </div>
-                <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+                <div className="items-center justify-end md:flex md:flex-1">
                     <NavButton
                         variant='solid'
                         color='orange'
