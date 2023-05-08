@@ -42,21 +42,36 @@ const Carousel = ({color, className='', children=[]}: PropsWithChildren<Carousel
     }
     const rightClick = () => {
         if (index === content.length -1) setIndex(0);
-        else setIndex(index - 1);
+        else setIndex(index + 1);
     }
     return (
         <div className={classNames(
             'caa-carousel flex flex-row justify-around items-center'
             , { [className]: className != null }
-            , {
-                'text-tan hover:text-tan-high': color === 'tan'
-                , 'text-white hover:text-schist-low': color === 'white'
-                , 'text-black hover:text-schist-high': color === 'black'
-            }
         )}>
-            <LeftArrow className="fill-current w-14 h-14 mx-2" onClick={leftClick}/>
+            <LeftArrow
+                className={classNames(
+                    "fill-current w-14 h-14 mx-2"
+                    , {
+                        'text-tan hover:text-tan-high': color === 'tan'
+                        , 'text-white hover:text-schist-low': color === 'white'
+                        , 'text-black hover:text-schist-high': color === 'black'
+                    }
+                )}
+                onClick={leftClick}
+            />
             {content[index]}
-            <RightArrow className="fill-current w-14 h-14 mx-2" onClick={rightClick}/>
+            <RightArrow
+                className={classNames(
+                    "fill-current w-14 h-14 mx-2"
+                    , {
+                        'text-tan hover:text-tan-high': color === 'tan'
+                        , 'text-white hover:text-schist-low': color === 'white'
+                        , 'text-black hover:text-schist-high': color === 'black'
+                    }
+                )}
+                onClick={rightClick}
+            />
         </div>
     );
 }
