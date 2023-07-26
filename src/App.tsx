@@ -14,10 +14,10 @@ import ErrorBoundary from './components/common/error-boundary';
 import Root from './components/root';
 import LandingPage from './landing-page/root';
 import AboutPage from './about-page/root';
-
-/******************************************/
-/* invoke cross-tab communication system
-/******************************************/
+import ContactPage from './contact-page/root';
+import DonatePage from './donate-page/root';
+import Approval101Page from './approval-101-page/root';
+import ArticlesPage from './articles-page/root';
 
 export default class App extends React.Component {
     constructor(props: any) {
@@ -34,6 +34,11 @@ export default class App extends React.Component {
                             <Routes>
                                 <Route path="/" element={<LandingPage />}/>
                                 <Route path="/about" element={<AboutPage />}/>
+                                <Route path="/contact" element={<AboutPage />}/>
+                                <Route path="/contact" element={<ContactPage />}/>
+                                <Route path="/donate" element={<DonatePage />}/>
+                                <Route path="/approval-101" element={<Approval101Page />}/>
+                                <Route path="/articles" element={<ArticlesPage />}/>
                             </Routes>
                         </Root>
                     </ErrorBoundary>

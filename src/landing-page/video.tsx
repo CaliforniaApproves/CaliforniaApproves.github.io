@@ -39,7 +39,7 @@ const Video = () => {
             </p>
             <br/>
             <Link
-                to="#"
+                to="/approval-101"
                 color="orange"
                 className="flex flex-row text-small align-center items-center text-center"
             >

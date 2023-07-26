@@ -60,7 +60,7 @@ const Header = () => {
                             <Logo className='w-56'/>
                         </a>
                         <Link to='/about' color="green" className='mx-4 hidden lg:block'><h5>ABOUT</h5></Link>
-                        <Link to='#' color="green" className='mx-4 hidden lg:block'><h5>ARTICLES</h5></Link>
+                        <Link to='/approval-101' color="green" className='mx-4 hidden lg:block'><h5>ARTICLES</h5></Link>
                         <Popover.Group as="nav" className="hidden space-x-10 lg:flex mx-4">
                             <Popover className="relative">
                                 {({ open }) => (
@@ -127,20 +127,20 @@ const Header = () => {
                                 )}
                             </Popover>
                         </Popover.Group>
-                        <Link to='#' color="green" className='mx-4 hidden lg:block'><h5>CONTACT</h5></Link>
+                        <Link to='https://californiaapproves.creator-spring.com/' color="green" className='mx-4 hidden lg:block'><h5>MERCH</h5></Link>
                     </div>
                     <div className="hidden items-center justify-end lg:flex lg:flex-1 ">
                         <NavButton
                             variant='solid'
                             color='orange'
-                            link='#'
+                            link='/contact'
                         >
                             Join Us
                         </NavButton>
                         <NavButton
                             variant='solid'
                             color='purple'
-                            link='#'
+                            link='/donate'
                             className='ml-4'
                         >
                             Donate
