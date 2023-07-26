@@ -46,12 +46,12 @@ const Carousel = ({color, className='', children=[]}: PropsWithChildren<Carousel
     }
     return (
         <div className={classNames(
-            'caa-carousel flex flex-row justify-around items-center'
+            'caa-carousel flex flex-col lg:flex-row justify-around items-center text-center lg:text-left'
             , { [className]: className != null }
         )}>
             <LeftArrow
                 className={classNames(
-                    "fill-current w-14 h-14 mx-2"
+                    "fill-current w-14 h-14 mx-2 hidden lg:flex"
                     , {
                         'text-tan hover:text-tan-high': color === 'tan'
                         , 'text-white hover:text-schist-low': color === 'white'
@@ -61,17 +61,30 @@ const Carousel = ({color, className='', children=[]}: PropsWithChildren<Carousel
                 onClick={leftClick}
             />
             {content[index]}
-            <RightArrow
-                className={classNames(
-                    "fill-current w-14 h-14 mx-2"
-                    , {
-                        'text-tan hover:text-tan-high': color === 'tan'
-                        , 'text-white hover:text-schist-low': color === 'white'
-                        , 'text-black hover:text-schist-high': color === 'black'
-                    }
-                )}
-                onClick={rightClick}
-            />
+            <div className='flex flex-row items-center mt-6 lg:mt-0'>
+                <LeftArrow
+                    className={classNames(
+                        "fill-current w-14 h-14 mx-2 flex lg:hidden"
+                        , {
+                            'text-tan hover:text-tan-high': color === 'tan'
+                            , 'text-white hover:text-schist-low': color === 'white'
+                            , 'text-black hover:text-schist-high': color === 'black'
+                        }
+                    )}
+                    onClick={leftClick}
+                />
+                <RightArrow
+                    className={classNames(
+                        "fill-current w-14 h-14 mx-2"
+                        , {
+                            'text-tan hover:text-tan-high': color === 'tan'
+                            , 'text-white hover:text-schist-low': color === 'white'
+                            , 'text-black hover:text-schist-high': color === 'black'
+                        }
+                    )}
+                    onClick={rightClick}
+                />
+            </div>
         </div>
     );
 }

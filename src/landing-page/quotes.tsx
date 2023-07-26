@@ -34,9 +34,15 @@ const placeholderQuotes: Quote[] = [
 // create a component
 const Quotes = () => {
     return (
-        <div className='bg-orange px-[180px] py-[112px]'>
+        <div className='bg-orange px-4 lg:px-[180px] py-[112px]'>
             <Carousel className="m-auto" color="tan">
-                { placeholderQuotes.map(quote => <h2 className="max-w-[50%] text-white hover:text-white" key={quote.source}>{quote.quote}</h2>) }
+                { placeholderQuotes.map((quote, index) =>
+                    <div key={index} className="lg:max-w-[50%] text-white hover:text-white">
+                        <h2>{quote.quote}</h2>
+                        <br/>
+                        <h2>{quote.source}</h2>
+                    </div>
+                ) }
             </Carousel>
         </div>
     );

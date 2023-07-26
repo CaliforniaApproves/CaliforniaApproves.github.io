@@ -87,21 +87,21 @@ const navigation = {
 // create a component
 const Footer = () => {
     return (
-        <footer className="bg-white" aria-labelledby="footer-heading">
+        <footer className="bg-white px-4 flex flex-col" aria-labelledby="footer-heading">
             <h2 id="footer-heading" className="sr-only">
                 Footer
             </h2>
-            <div className="w-full px-44 py-20">
-                <div className="flex flex-row justify-between w-full">
-                    <div className="space-y-8 w-1/4">
+            <div className="w-full lg:px-44 py-10 lg:py-20">
+                <div className="flex flex-col lg:flex-row justify-between w-full">
+                    <div className="space-y-8 lg:w-1/4">
                         <Logo className="w-[137px] h=[39px]"/>
                         <p className="leading-6">
                             California Approves is a grassroots organization working to improve democracy, reduce political polarization, and make progress on the things Californians can agree on.
                         </p>
                     </div>
-                    <div className="w-1/4 px-8">
+                    <div className="lg:w-1/4 lg:px-8">
                         <h3 className="text-sm font-semibold leading-6 text-orange">Learn More</h3>
-                        <ul role="list" className="mt-6 space-y-4">
+                        <ul role="list" className="lg:space-y-4 lg:mt-6">
                             { navigation.learnMore.map((item) => (
                             <li key={item.name}>
                                 <a href={item.href}>
@@ -111,9 +111,9 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="w-1/4 px-8">
+                    <div className="lg:w-1/4 lg:px-8">
                         <h3 className="text-sm font-semibold leading-6 text-orange">Support</h3>
-                        <ul role="list" className="mt-6 space-y-4">
+                        <ul role="list" className="lg:space-y-4 lg:mt-6">
                             { navigation.getInvolved.map((item) => (
                             <li key={item.name}>
                                 <a href={item.href}>
@@ -123,10 +123,10 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="w-1/4">
+                    <div className="lg:w-1/4">
                         <div>
                             <h3 className="text-sm font-semibold leading-6 text-orange">Follow Us</h3>
-                            <div className="flex space-x-6 mt-6">
+                            <div className="flex space-x-6 lg:mt-6">
                                 { navigation.social.map((item) => (
                                     <a key={item.name} href={item.href} className="text-purple hover:text-purple-high">
                                         <span className="sr-only">{item.name}</span>
@@ -137,7 +137,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 flex flex-row justify-between">
+                <div className="mt-16 border-t border-white/10 py-8 lg:mt-24 flex flex-row justify-between">
                     <p className="text-xs leading-5">&copy; 2023 California Approves. All right reserved.</p>
                     <div className='flex flex-row'>
                         <Link

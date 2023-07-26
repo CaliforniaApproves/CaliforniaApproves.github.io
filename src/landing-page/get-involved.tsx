@@ -23,17 +23,17 @@ import Polling from '../assets/images/polling-place.png';
 // create a component
 const GetInvolved = () => {
     return (
-        <div className='flex flex-col items-center'>
-            <h4 className='text-purple'>
+        <div className='flex flex-col items-center mx-auto lg:px-10'>
+            <h4 className='text-purple text-center'>
                 READY TO GET INVOLVED?
             </h4>
-            <h2 className='text-green'>
+            <h2 className='text-green text-center'>
                 Three Ways You Can Help
             </h2>
             <br/>
-            <div className='flex flex-row justify-center text-white'>
+            <div className='flex flex-col lg:flex-row justify-center text-white'>
                 <div
-                    className='p-12 w-1/3'
+                    className='p-12 lg:w-1/3 lg:rounded-l-2xl'
                     style={{
                         background: `url(${PeopleTalking}) 25%, #8956ff`
                         , backgroundSize: 'cover'
@@ -49,7 +49,7 @@ const GetInvolved = () => {
                     </p>
                 </div>
                 <div
-                    className='p-12 w-1/3'
+                    className='p-12 lg:w-1/3'
                     style={{
                         backgroundImage: `url(${Voting})`
                         , backgroundSize: 'cover'
@@ -65,7 +65,7 @@ const GetInvolved = () => {
                     </p>
                 </div>
                 <div
-                    className='p-12 w-1/3'
+                    className='p-12 lg:w-1/3 lg:rounded-r-2xl'
                     style={{
                         backgroundImage: `url(${Polling})`
                         , backgroundSize: 'cover'

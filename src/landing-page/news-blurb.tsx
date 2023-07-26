@@ -39,10 +39,10 @@ export type NewsBlurbProps = {
 // create a component
 const NewsBlurb = ({title, body, link, tag, color}: PropsWithChildren<NewsBlurbProps>) => {
     return (
-        <div className='caa-news-blurb p-12 my-12 mx-2'>
+        <div className='caa-news-blurb p-12 lg:my-12 mx-2'>
             <div
                 className={classnames(
-                    'border-t-[6px] w-[512px]'
+                    'border-t-[6px] lg:w-[512px]'
                     , {
                         'border-purple': color === 'purple'
                         , 'border-orange': color === 'orange'
