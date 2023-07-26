@@ -34,7 +34,6 @@ export default class App extends React.Component {
                             <Routes>
                                 <Route path="/" element={<LandingPage />}/>
                                 <Route path="/about" element={<AboutPage />}/>
-                                <Route path="/contact" element={<AboutPage />}/>
                                 <Route path="/contact" element={<ContactPage />}/>
                                 <Route path="/donate" element={<DonatePage />}/>
                                 <Route path="/approval-101" element={<Approval101Page />}/>
