@@ -51,15 +51,15 @@ const education: MenuDropDown[] = [
 const Header = () => {
     const [burgerOpen, setBurgerOpen] = useState(false);
     return (
-        <Popover className="bg-white sticky top-0 z-30">
+        <Popover className="bg-white lg:sticky top-0 z-30">
             <div className="mx-auto max-w-7xl">
                 <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start items-center lg:flex-1">
-                        <a href="#" className='m-4'>
+                        <a href="/" className='m-4'>
                             <span className="sr-only">CA Approves</span>
                             <Logo className='w-56'/>
                         </a>
-                        <Link to='#' color="green" className='mx-4 hidden lg:block'><h5>ABOUT</h5></Link>
+                        <Link to='/about' color="green" className='mx-4 hidden lg:block'><h5>ABOUT</h5></Link>
                         <Link to='#' color="green" className='mx-4 hidden lg:block'><h5>ARTICLES</h5></Link>
                         <Popover.Group as="nav" className="hidden space-x-10 lg:flex mx-4">
                             <Popover className="relative">

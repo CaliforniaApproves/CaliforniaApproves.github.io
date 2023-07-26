@@ -13,6 +13,7 @@ import store from './store';
 import ErrorBoundary from './components/common/error-boundary';
 import Root from './components/root';
 import LandingPage from './landing-page/root';
+import AboutPage from './about-page/root';
 
 /******************************************/
 /* invoke cross-tab communication system
@@ -32,6 +33,7 @@ export default class App extends React.Component {
                         <Root>
                             <Routes>
                                 <Route path="/" element={<LandingPage />}/>
+                                <Route path="/about" element={<AboutPage />}/>
                             </Routes>
                         </Root>
                     </ErrorBoundary>

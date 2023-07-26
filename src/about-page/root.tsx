@@ -1,5 +1,11 @@
 /* ****** CAA Imports ****** */
 // UI
+import Header from '../components/header';
+import Footer from '../components/footer';
+import CaaIntro from './caa-intro';
+import Plan from './plan';
+import People from './people';
+import JoinUs from './join';
 
 // Logic
 
@@ -21,6 +27,12 @@ import update from 'immutability-helper';
 const AboutPage = () => {
     return (
         <div className='caa-about-page'>
+            <Header />
+            <CaaIntro />
+            <Plan />
+            <People />
+            <JoinUs />
+            <Footer />
         </div>
     );
 }
