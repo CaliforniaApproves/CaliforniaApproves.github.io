@@ -2,6 +2,8 @@
 // UI
 import Header from '../components/header';
 import Footer from '../components/footer';
+import TopSection from './top-section';
+import InfoSection from './info-section';
 
 // Logic
 
@@ -24,6 +26,8 @@ const ContactPage = () => {
     return (
         <div className='caa-contact-page'>
             <Header/>
+            <TopSection/>
+            <InfoSection/>
             <Footer/>
         </div>
     );

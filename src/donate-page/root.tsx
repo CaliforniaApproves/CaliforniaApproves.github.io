@@ -2,6 +2,7 @@
 // UI
 import Header from '../components/header';
 import Footer from '../components/footer';
+import FormSection from './form-section';
 
 // Logic
 
@@ -24,6 +25,7 @@ const DonatePage = () => {
     return (
         <div className='caa-donate-page'>
             <Header/>
+            <FormSection />
             <Footer/>
         </div>
     );

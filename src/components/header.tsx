@@ -36,12 +36,12 @@ const education: MenuDropDown[] = [
     {
         name: 'What is Approval Voting'
         , description: 'An overview of approval voting'
-        , href: '#'
+        , href: '/approval-101'
         , icon: QuestionMarkCircleIcon
     }
 ]
   const callsToAction = [
-    { name: 'Watch Intro', href: '#', icon: PlayIcon }
+    { name: 'Watch Intro', href: 'https://www.youtube.com/watch?v=m8VXIIaC9Zw', icon: PlayIcon }
   ]
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')

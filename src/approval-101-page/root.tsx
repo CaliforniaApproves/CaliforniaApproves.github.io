@@ -2,6 +2,10 @@
 // UI
 import Header from '../components/header';
 import Footer from '../components/footer';
+import VideoSection from './video-section';
+import BallotSection from './ballot-section';
+import ClosingSection from './closing-section';
+import CallToAction from './call-to-action';
 // Logic
 
 /* ****** Other Imports ****** */
@@ -23,6 +27,10 @@ const Approval101Page = () => {
     return (
         <div className='approval-101-page'>
             <Header/>
+            <VideoSection />
+            <BallotSection />
+            <ClosingSection/>
+            <CallToAction />
             <Footer/>
         </div>
     );

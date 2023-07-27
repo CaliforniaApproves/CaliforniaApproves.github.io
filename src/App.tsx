@@ -19,6 +19,8 @@ import DonatePage from './donate-page/root';
 import Approval101Page from './approval-101-page/root';
 import ArticlesPage from './articles-page/root';
 
+import './assets/stylesheets/all.scss';
+
 export default class App extends React.Component {
     constructor(props: any) {
         super(props);
