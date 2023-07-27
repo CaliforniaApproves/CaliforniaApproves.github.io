@@ -177,7 +177,7 @@ const Header = () => {
                                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 text-white">
                                                 <div className="relative w-full grid gap-6 bg-purple px-5 py-6 sm:gap-8 sm:p-8">
                                                     <Link to='/about' color="white" className='mx-4'><h2>About</h2></Link>
-                                                    <Link to='/approval-101' color="white" className='mx-4'><h2>Articles</h2></Link>
+                                                    <Link to='/articles' color="white" className='mx-4'><h2>Articles</h2></Link>
                                                     <h2 className='mx-4 flex flex-row items-center'>
                                                         Approval 101
                                                         <ChevronDownIcon

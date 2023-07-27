@@ -14,9 +14,9 @@ import update from 'immutability-helper';
 
 /* ****** Constants ****** */
 // Imported
-import PeopleTalking from '../assets/images/people-talking.png';
-import Voting from '../assets/images/votes.png';
-import Polling from '../assets/images/polling-place.png';
+import PeopleTalking from '../assets/images/people-talking-clear.png';
+import Voting from '../assets/images/votes-clear.png';
+import Polling from '../assets/images/polling-place-clear.png';
 
 // Generated
 
@@ -35,7 +35,8 @@ const GetInvolved = () => {
                 <div
                     className='p-12 lg:w-1/3 lg:rounded-l-2xl'
                     style={{
-                        background: `url(${PeopleTalking}) 25%, #8956ff`
+                        background: `url(${PeopleTalking})`
+                        , backgroundColor: '#8956ff'
                         , backgroundSize: 'cover'
                         , backgroundRepeat: 'no-repeat'
                     }}
@@ -52,6 +53,7 @@ const GetInvolved = () => {
                     className='p-12 lg:w-1/3'
                     style={{
                         backgroundImage: `url(${Voting})`
+                        , backgroundColor: '#f16200'
                         , backgroundSize: 'cover'
                         , backgroundRepeat: 'no-repeat'
                     }}
@@ -68,6 +70,7 @@ const GetInvolved = () => {
                     className='p-12 lg:w-1/3 lg:rounded-r-2xl'
                     style={{
                         backgroundImage: `url(${Polling})`
+                        , backgroundColor: '#283620'
                         , backgroundSize: 'cover'
                         , backgroundRepeat: 'no-repeat'
                     }}
