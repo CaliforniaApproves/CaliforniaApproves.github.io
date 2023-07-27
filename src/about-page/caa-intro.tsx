@@ -37,8 +37,8 @@ const CaliforniaApprovesIntro = () => {
                     We are volunteers gathered together by our passion to reform voting in California. We believe that good voting reform can bring our democracy closer to the will of the people and reduce partisanship.
                 </p>
             </div>
-            <div className='w-1/2 p-4'>
-                <img src={activists} alt="activists"/>
+            <div className='lg:w-1/2 p-4'>
+                <img className='rounded-2xl' src={activists} alt="activists"/>
             </div>
         </div>
     );

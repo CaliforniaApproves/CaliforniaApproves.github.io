@@ -72,7 +72,7 @@ const social = [
 const InfoSection = () => {
     return (
         <div className='flex flex-col lg:flex-row px-4 py-10 bg-purple text-white'>
-            <div className='lg:w-1/2 flex flex-row justify-around my-auto'>
+            <div className='lg:w-1/2 flex flex-col lg:flex-row justify-around my-auto'>
                 <div>
                     <h5>EMAIL</h5>
                     <p className='text-base'>
@@ -91,8 +91,8 @@ const InfoSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:w-1/2'>
-                <img src={bridge} alt="san francisco bridge"/>
+            <div className='lg:w-1/2 mt-10 lg:mt-0'>
+                <img className='rounded-2xl' src={bridge} alt="san francisco bridge"/>
             </div>
         </div>
     );

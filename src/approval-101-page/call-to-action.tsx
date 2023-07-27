@@ -21,10 +21,10 @@ import { NavButton } from '../components/common/buttons';
 // create a component
 const CallToAction = () => {
     return (
-        <div className='bg-green text-white flex flex-col lg:flex-row w-full py-10 justify-around items-center'>
+        <div className='bg-green text-white text-center flex flex-col lg:flex-row w-full py-10 justify-around items-center'>
             <h2>Want to join the team?</h2>
             <NavButton
-                className='w-40'
+                className='w-40 my-10'
                 color='orange'
                 variant='solid'
                 link="/contact"

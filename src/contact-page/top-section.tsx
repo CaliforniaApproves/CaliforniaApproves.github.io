@@ -11,6 +11,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
+import Background from '../assets/images/Background-Pattern.svg';
 
 /* ****** Constants ****** */
 // Imported
@@ -20,7 +21,13 @@ import update from 'immutability-helper';
 // create a component
 const TopSection = () => {
     return (
-        <div className='py-10 px-4 flex flex-col lg:flex-row'>
+        <div className='py-10 px-4 flex flex-col lg:flex-row'
+            style={{
+                backgroundImage: `url(${Background})`
+                , backgroundSize: 'cover'
+                , backgroundRepeat: 'no-repeat'
+            }}
+        >
             <div className='lg:w-1/2 px-4'>
                 <h2 className='text-center'>Contact Us</h2>
             </div>

@@ -25,7 +25,7 @@ type PersonIntroProps = {
 // create a component
 const PersonIntro = ({children, title, name, intro}: PropsWithChildren<PersonIntroProps>) => {
     return (
-        <div className='caa-person-intro flex flex-col lg:max-w-[33%]'>
+        <div className='caa-person-intro flex flex-col lg:max-w-[33%] my-10'>
             {children}
             <h5 className='capitalize'>{title}</h5>
             <h2>{name}</h2>

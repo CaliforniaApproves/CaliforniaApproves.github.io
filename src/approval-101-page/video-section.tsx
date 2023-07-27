@@ -12,6 +12,7 @@ import React from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
+import Background from '../assets/images/Group-39.svg';
 
 /* ****** Constants ****** */
 // Imported
@@ -21,7 +22,13 @@ import update from 'immutability-helper';
 // create a component
 const VideoSection = () => {
     return (
-        <div className='flex flex-col px-4 py-10'>
+        <div className='flex flex-col px-4 py-10'
+            style={{
+                backgroundImage: `url(${Background})`
+                , backgroundSize: 'cover'
+                , backgroundRepeat: 'no-repeat'
+            }}
+        >
             <h2 className='mb-10 text-center'>What is Approval Voting?</h2>
             <div className='flex flex-col lg:flex-row'>
                 <div className='lg:w-1/2'>

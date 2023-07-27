@@ -32,19 +32,19 @@ const People = () => {
                     title='president'
                     name='Alan Savage'
                 >
-                    <img src={alanProfile} alt="alan savage"/>
+                    <img className='rounded-2xl' src={alanProfile} alt="alan savage"/>
                 </PersonIntro>
                 <PersonIntro
                     title='treasurer'
                     name='Jeff Justice'
                 >
-                    <img src={jeffProfile} alt="jeff justice"/>
+                    <img className='rounded-2xl' src={jeffProfile} alt="jeff justice"/>
                 </PersonIntro>
                 <PersonIntro
                     title='web developer'
                     name='Kevin Gray'
                 >
-                    <img className="h-[300px]" src={kevinProfile} alt="kevin gray"/>
+                    <img className="h-[300px] rounded-2xl" src={kevinProfile} alt="kevin gray"/>
                 </PersonIntro>
             </div>
         </div>

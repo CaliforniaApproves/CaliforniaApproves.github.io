@@ -11,6 +11,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
+import voteMatters from '../assets/images/vote-matters.jpg';
 
 /* ****** Constants ****** */
 // Imported
@@ -20,13 +21,18 @@ import update from 'immutability-helper';
 // create a component
 const ClosingSection = () => {
     return (
-        <div className='py-10 px-4'>
-            <h2>Approval voting is a simple tweak that offers enormous benefits:</h2>
-            <ul className="list-disc pl-10 text-base pt-4">
-                <li>If your favorite isn’t the front runner, you can’t vote for them without risking helping your least favorite with. This is called “the spoiler effect”.</li>
-                <li>Winning candidates often don’t represent a broad base of voters. It is common for candidates to receive less than 50% of the vote.</li>
-                <li>The system is dominated by two parties, leaving no room for new ideas to break through.</li>
-            </ul>
+        <div className='py-10 px-4 flex flex-col lg:flex-row'>
+            <div className='lg:w-1/2'>
+                <img className='rounded-2xl' src={voteMatters} alt="your vote matters"/>
+            </div>
+            <div  className='lg:w-1/2 lg:ml-4 my-auto'>
+                <h2>Approval voting is a simple tweak that offers enormous benefits:</h2>
+                <ul className="list-disc pl-10 text-base pt-4">
+                    <li>If your favorite isn’t the front runner, you can’t vote for them without risking helping your least favorite with. This is called “the spoiler effect”.</li>
+                    <li>Winning candidates often don’t represent a broad base of voters. It is common for candidates to receive less than 50% of the vote.</li>
+                    <li>The system is dominated by two parties, leaving no room for new ideas to break through.</li>
+                </ul>
+            </div>
         </div>
     );
 }
