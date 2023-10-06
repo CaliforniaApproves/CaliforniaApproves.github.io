@@ -25,7 +25,7 @@ import Background from '../assets/images/Group-39.svg';
 const Banner = () => {
     return (
         <div
-            className="caa-home-page-banner w-full flex flex-col lg:flex-row items-center justify-center py-[30px]"
+            className="caa-home-page-banner w-full lg:max-w-7xl lg:m-auto flex flex-col lg:flex-row items-center justify-center py-[30px]"
             style={{
                 backgroundImage: `url(${Background})`
                 , backgroundSize: 'cover'
