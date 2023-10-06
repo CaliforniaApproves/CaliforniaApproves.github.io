@@ -20,8 +20,27 @@ import update from 'immutability-helper';
 // create a component
 const FormSection = () => {
     return (
-        <div className='px-4 py-10 bg-gradient-to-br from-purple to-tan flex flex-col items-center'>
-            <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/california-approval-voting?default_interval=o&hide_donation_meter=true" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless={true} frameBorder="0" scrolling="no" height="900px" width="100%" style={{maxWidth: "500px", minWidth: "250px", maxHeight:"none!important"}}></iframe>
+        <div className='px-4 py-10 bg-gradient-to-bl from-purple to-tan flex flex-col items-center'>
+            <div className='flex flex-col'>
+                <div className='text-white mb-10 text-center'>
+                    <h1 className='mb-4'>Donate to California Approves</h1>
+                    <h5>Your donation will help bring better democracy to California</h5>
+                </div>
+                <div className='flex flex-col md:flex-row md:px-20'>
+                    <div className='md:w-1/2 flex justify-center'>
+                        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/california-approval-voting?default_interval=o&hide_donation_meter=true" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless={true} frameBorder="0" scrolling="no" height="900px" width="100%" style={{maxWidth: "500px", minWidth: "250px", maxHeight:"none!important"}}></iframe>
+
+                    </div>
+                    <div className='text-white md:w-1/2'>
+                        <h2 className='mb-4'>We believe in a better democracy</h2>
+                        <p className='text-base'>California Approves strives to make California elections more expressive and fair. We believe that voting systems shape voter and candidate behavior. Better voting systems let voters be more honest and incentivize candidates to better represent the electorate.</p>
+                        <br/>
+                        <p className='text-base'>We are a group of grassroots volunteers dedicating our free time to bring better democracy to California. Donations to our organization help us educate voters on approval voting, fund ballot measures to get approval voting on the ballot, and generally bring awareness to voting reform.</p>
+                        <br/>
+                        <p className='text-base'>The state of California requires we gather employment information on all donations.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

@@ -44,7 +44,8 @@ const About = () => {
                     </p>
                     <br/>
                     <Link
-                        to='#'
+                        to='https://calendly.com/alan-approves/30min'
+                        target="_blank"
                         color="white"
                         className='italic underline flex flex-row text-small align-center items-center text-center'
                     >
@@ -78,8 +79,9 @@ const About = () => {
                     </p>
                     <br/>
                     <Link
-                        to='#'
+                        to='mailto:info@californiaapproves.org'
                         color="white"
+                        target="_blank"
                         className='italic underline flex flex-row text-small align-center items-center text-center'
                     >
                         GET IN TOUCH

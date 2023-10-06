@@ -6,7 +6,8 @@
     "baseUrl": ".",
     "typeRoots": [
       "node_modules/@types",
-      "typings"
+      "typings",
+      "node_modules"
     ],
     "paths": {
       "*": [

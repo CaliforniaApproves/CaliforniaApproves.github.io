@@ -60,7 +60,7 @@ const Header = () => {
                             <Logo className='w-56'/>
                         </a>
                         <Link to='/about' color="green" className='mx-4 hidden lg:block'><h5>ABOUT</h5></Link>
-                        <Link to='/articles' color="green" className='mx-4 hidden lg:block'><h5>ARTICLES</h5></Link>
+                        {/* <Link to='/articles' color="green" className='mx-4 hidden lg:block'><h5>ARTICLES</h5></Link> */}
                         <Popover.Group as="nav" className="hidden space-x-10 lg:flex mx-4">
                             <Popover className="relative">
                                 {({ open }) => (
@@ -127,7 +127,7 @@ const Header = () => {
                                 )}
                             </Popover>
                         </Popover.Group>
-                        <Link to='https://californiaapproves.creator-spring.com/' color="green" className='mx-4 hidden lg:block'><h5>MERCH</h5></Link>
+                        <Link to='https://californiaapproves.creator-spring.com/' target="_blank" color="green" className='mx-4 hidden lg:block'><h5>MERCH</h5></Link>
                     </div>
                     <div className="hidden items-center justify-end lg:flex lg:flex-1 ">
                         <NavButton
@@ -177,7 +177,7 @@ const Header = () => {
                                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 text-white">
                                                 <div className="relative w-full grid gap-6 bg-purple px-5 py-6 sm:gap-8 sm:p-8">
                                                     <Link to='/about' color="white" className='mx-4'><h2>About</h2></Link>
-                                                    <Link to='/articles' color="white" className='mx-4'><h2>Articles</h2></Link>
+                                                    {/* <Link to='/articles' color="white" className='mx-4'><h2>Articles</h2></Link> */}
                                                     <h2 className='mx-4 flex flex-row items-center'>
                                                         Approval 101
                                                         <ChevronDownIcon
@@ -186,7 +186,9 @@ const Header = () => {
                                                         />
                                                     </h2>
                                                     <Link to='/approval-101' color="white" className='mx-4 text-base'><h4>What is approval voting?</h4></Link>
+                                                    <Link to='https://californiaapproves.creator-spring.com/' target="_blank" color="white" className='mx-4 text-base'><h2>MERCH</h2></Link>
                                                 </div>
+
                                                 <div className="bg-purple px-5 py-5 flex flex-row space-y-0 sm:px-8">
                                                     <NavButton
                                                         variant='solid'
