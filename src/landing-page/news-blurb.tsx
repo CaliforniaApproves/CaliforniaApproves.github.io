@@ -38,11 +38,14 @@ export type NewsBlurbProps = {
 
 // create a component
 const NewsBlurb = ({title, body, link, tag, color}: PropsWithChildren<NewsBlurbProps>) => {
+    // lg:even:border-l-2 matches the grid-cols-2 in news.tsx
+    // TODO: Is there a cleaner way to get 2-cols of equally sized blurbs with
+    // borders between them that works on all screen sizes?
     return (
-        <div className='caa-news-blurb p-12 lg:my-12 mx-2'>
+        <div className='caa-news-blurb p-12 lg:my-12 lg:even:border-l-2 mx-2'>
             <div
                 className={classnames(
-                    'border-t-[6px] lg:w-[512px]'
+                    'border-t-[6px]'
                     , {
                         'border-purple': color === 'purple'
                         , 'border-orange': color === 'orange'
