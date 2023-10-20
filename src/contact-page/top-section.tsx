@@ -11,7 +11,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import Background from '../assets/images/Illustrations-1.png';
+import Background from '../assets/images/volunteer_transparent.png';
 
 /* ****** Constants ****** */
 // Imported
@@ -21,19 +21,15 @@ import Background from '../assets/images/Illustrations-1.png';
 // create a component
 const TopSection = () => {
     return (
-        <div className='py-10 px-4 flex flex-col lg:flex-row'
+        <div className='py-10 px-4 flex h-96 text-center text-white'
             style={{
                 backgroundImage: `url(${Background})`
+                , backgroundColor: '#283620'
                 , backgroundSize: 'cover'
                 , backgroundRepeat: 'no-repeat'
             }}
         >
-            <div className='lg:w-1/2 px-4'>
-                <h2 className='text-center'>Contact Us</h2>
-            </div>
-            <div className='lg:w-1/2 px-4 text-base'>
-                We would love to hear from you. Whether it’s for getting involved or just questions and clarifications on approval voting, please don’t hesitate to reach out.
-            </div>
+            <h1 className='m-auto'>Become a Volunteer</h1>
         </div>
     );
 }

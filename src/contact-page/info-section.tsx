@@ -72,24 +72,34 @@ const social = [
 const InfoSection = () => {
     return (
         <div className='flex flex-col lg:flex-row px-4 py-10 bg-purple text-white'>
-            <div className='lg:w-1/2 flex flex-col lg:flex-row justify-around my-auto'>
-                <div>
-                    <h5>EMAIL</h5>
-                    <p className='text-base'>
-                        info@californiaapproves.org
-                    </p>
-                </div>
-                <div>
-                    <h5>SOCIAL</h5>
-                    <div className="flex space-x-6 lg:mt-6">
-                        { social.map((item) => (
-                            <a key={item.name} href={item.href} className="text-orange hover:text-orange-high">
-                                <span className="sr-only">{item.name}</span>
-                                <item.icon className="h-6 w-6" aria-hidden="true" />
-                            </a>
-                        ))}
+            <div className='lg:w-1/2 flex flex-col justify-around my-auto'>
+                <h2>How can you help?</h2>
+                <br/>
+                <p className='text-base'>Currently we need volunteers for launching campaigns in localities. Many places could potentially adopt approval voting, but need a local voter to initiate the process. Additionally, we would like to expand awareness and to local people who may not be as passionate about voting reform. We have need of people of various skill sets, but these two are the simplest way you can make an impact.</p>
+                <br/>
+                <h3>Have any questions? Reach out!</h3>
+                <br/>
+                <div className='flex flex-col lg:flex-row justify-around'>
+                    <div>
+                        <h5>EMAIL</h5>
+                        <p className='text-base'>
+                            info@californiaapproves.org
+                        </p>
+                    </div>
+                    <br/>
+                    <div>
+                        <h5>SOCIAL</h5>
+                        <div className="flex space-x-6 lg:mt-6">
+                            { social.map((item) => (
+                                <a key={item.name} href={item.href} className="text-orange hover:text-orange-high">
+                                    <span className="sr-only">{item.name}</span>
+                                    <item.icon className="h-6 w-6" aria-hidden="true" />
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div className='lg:w-1/2 mt-10 lg:mt-0'>
                 <img className='rounded-2xl' src={bridge} alt="san francisco bridge"/>
