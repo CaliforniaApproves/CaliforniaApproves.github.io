@@ -32,7 +32,7 @@ const Banner = () => {
                 , backgroundRepeat: 'no-repeat'
             }}
         >
-            <div className='m-auto px-4 pb-4 lg:pb-0'>
+            <div className='m-auto px-8 pb-4 lg:pb-0'>
                 <img src={strongArm} alt="strong arm"/>
                 <h1 className='no-wrap text-green'>The <span className='text-purple'>Easiest</span> Way To Make</h1>
                 <h1 className='text-green'>The <span className='text-purple'>Biggest</span> Impact</h1>
@@ -43,7 +43,7 @@ const Banner = () => {
                     </p>
                 </div>
             </div>
-            <div className='py-[90px] max-w-full lg:max-w-[40%] m-auto bg-purple lg:bg-transparent px-4'>
+            <div className='py-[90px] max-w-full lg:max-w-[40%] m-auto bg-purple lg:bg-transparent px-8'>
               <MailingForm />
             </div>
         </div>

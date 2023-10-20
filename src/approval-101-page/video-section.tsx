@@ -22,7 +22,7 @@ import Background from '../assets/images/Group-39.svg';
 // create a component
 const VideoSection = () => {
     return (
-        <div className='flex flex-col px-4 py-10'
+        <div className='flex flex-col px-8 py-10'
             style={{
                 backgroundImage: `url(${Background})`
                 , backgroundSize: 'cover'
@@ -34,7 +34,7 @@ const VideoSection = () => {
                 <div className='lg:w-1/2'>
                     <Video embedId={"db6Syys2fmE"} title={"What Is Approval Voting?"}/>
                 </div>
-                <div className='lg:w-1/2 px-4 my-auto'>
+                <div className='lg:w-1/2 px-8 my-auto'>
                     <h5>When you enter the polling booth, you can only vote for one candidate. But only being able to vote for one candidate causes lots of problems:</h5>
                     <ul className="list-disc pl-10 pt-4 text-base">
                         <li>If your favorite isn’t the front runner, you can’t vote for them without risking helping your least favorite with. This is called “the spoiler effect”.</li>

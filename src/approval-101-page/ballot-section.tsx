@@ -21,7 +21,7 @@ import ballot from '../assets/images/borderless ballot.png';
 // create a component
 const BallotSection = () => {
     return (
-        <div className='flex flex-col lg:flex-row px-4 py-10 bg-purple text-white'>
+        <div className='flex flex-col lg:flex-row px-8 py-10 bg-purple text-white'>
             <div className='lg:w-1/2 my-auto'>
                 <h2>
                     {"Our elections don't have to be like this! The solution is"} <strong className='text-tan'>Approval Voting</strong>

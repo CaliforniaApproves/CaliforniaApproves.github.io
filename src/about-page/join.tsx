@@ -21,7 +21,7 @@ import { NavButton } from '../components/common/buttons';
 // create a component
 const JoinUs = () => {
     return (
-        <div className='bg-purple text-white flex flex-col lg:flex-row w-full px-4 py-10 justify-around items-center'>
+        <div className='bg-purple text-white flex flex-col lg:flex-row w-full px-8 py-10 justify-around items-center'>
             <h2 className='text-center'>Want to join the team?</h2>
             <NavButton
                 className='w-40 my-10'

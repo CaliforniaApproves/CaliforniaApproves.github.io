@@ -25,7 +25,7 @@ import { ReactComponent as Arrow } from '../assets/icons/Arrow.svg';
 const Video = () => {
     return (
         <div
-            className="caa-home-page-video w-full flex flex-col items-center justify-center py-16 px-4"
+            className="caa-home-page-video w-full flex flex-col items-center justify-center py-16 px-8"
             style={{
                 backgroundImage: `url(${Background})`
                 , backgroundSize: 'cover'

@@ -71,7 +71,7 @@ const social = [
 // create a component
 const InfoSection = () => {
     return (
-        <div className='flex flex-col lg:flex-row px-4 py-10 bg-purple text-white'>
+        <div className='flex flex-col lg:flex-row px-8 py-10 bg-purple text-white'>
             <div className='lg:w-1/2 flex flex-col justify-around my-auto'>
                 <h2>How can you help?</h2>
                 <br/>
@@ -79,8 +79,8 @@ const InfoSection = () => {
                 <br/>
                 <h3>Have any questions? Reach out!</h3>
                 <br/>
-                <div className='flex flex-col lg:flex-row justify-around'>
-                    <div>
+                <div className='flex flex-col lg:flex-row justify-start'>
+                    <div className='lg:mr-8'>
                         <h5>EMAIL</h5>
                         <p className='text-base'>
                             info@californiaapproves.org

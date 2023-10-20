@@ -76,7 +76,7 @@ const NewsBlurb = ({title, body, link, tag, color}: PropsWithChildren<NewsBlurbP
                     <Link
                         to={link}
                         color='black'
-                        className='underline px-4'
+                        className='underline px-8'
                     >
                         LEARN MORE HERE
                     </Link>

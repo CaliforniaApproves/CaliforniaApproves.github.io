@@ -21,7 +21,7 @@ import Background from '../assets/images/volunteer_transparent.png';
 // create a component
 const TopSection = () => {
     return (
-        <div className='py-10 px-4 flex h-96 text-center text-white'
+        <div className='py-10 px-8 flex h-96 text-center text-white'
             style={{
                 backgroundImage: `url(${Background})`
                 , backgroundColor: '#283620'

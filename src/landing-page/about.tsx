@@ -24,7 +24,7 @@ import { ReactComponent as Arrow } from '../assets/icons/Arrow.svg';
 const About = () => {
     return (
         <div
-            className='flex flex-col align-center items-center pb-28 px-4'
+            className='flex flex-col align-center items-center pb-28 px-8'
             style={{
                 backgroundImage: `url(${Background})`
                 , backgroundRepeat: 'no-repeat'

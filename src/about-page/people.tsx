@@ -24,7 +24,7 @@ import kevinProfile from '../assets/images/Kevin-Gray-Profile.jpg';
 // create a component
 const People = () => {
     return (
-        <div className='caa-about-people flex flex-col py-10 px-4'>
+        <div className='caa-about-people flex flex-col py-10 px-8'>
             <h5>ABOUT US</h5>
             <h2 className='text-purple'>Meet Our Team</h2>
             <div className='flex flex-col lg:flex-row flex-wrap justify-between items-center py-10'>

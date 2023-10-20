@@ -30,7 +30,7 @@ const CaliforniaApprovesIntro = () => {
                 , backgroundRepeat: 'no-repeat'
             }}
         >
-            <div className='flex flex-col m-auto px-4 lg:w-1/2'>
+            <div className='flex flex-col m-auto px-8 lg:w-1/2'>
                 <h5>CALIFORNIA APPROVES</h5>
                 <h2 className='text-purple'>Grassroots Reformers</h2>
                 <p className='text-large-bold'>

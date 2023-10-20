@@ -25,7 +25,7 @@ const Plan = () => {
             <div className='lg:w-1/2 p-4'>
                 <img className='rounded-2xl' src={signatures} alt="signatures"/>
             </div>
-            <div className='flex flex-col m-auto px-4 lg:w-1/2'>
+            <div className='flex flex-col m-auto px-8 lg:w-1/2'>
                 <h2 className='text-tan'>Our Plan</h2>
                 <p className='text-large-bold'>1. Run donation campaign to fund ballot initiative.</p>
                 <p className='text-large-bold'>2. Identify good target for ballot initiative.</p>
