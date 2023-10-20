@@ -75,7 +75,7 @@ const InfoSection = () => {
             <div className='lg:w-1/2 flex flex-col justify-around my-auto'>
                 <h2>How can you help?</h2>
                 <br/>
-                <p className='text-base'>Currently we need volunteers for launching campaigns in localities. Many places could potentially adopt approval voting, but need a local voter to initiate the process. Additionally, we would like to expand awareness and to local people who may not be as passionate about voting reform. We have need of people of various skill sets, but these two are the simplest way you can make an impact.</p>
+                <p className='text-base'>Currently we need volunteers for launching campaigns in localities. Many places could potentially adopt approval voting, but need a local voter to initiate the process. Additionally, we would like to expand awareness to local people who may not be as passionate about voting reform. We have need of people of various skillsets, but these two are the simplest way you can make an impact.</p>
                 <br/>
                 <h3>Have any questions? Reach out!</h3>
                 <br/>
