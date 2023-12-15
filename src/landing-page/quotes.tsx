@@ -35,7 +35,7 @@ const placeholderQuotes: Quote[] = [
     }
     , {
         quote: "Right now, politicians can be elected with just 35% of the vote, and that's just not right...[Approval voting] will make sure that most voters actually support the winning candidate."
-        , source: 'Cori Bush, U.S. House of Representatives, MO-1'
+        , source: 'Cori Bush, U.S. House of Representatives, MO-1, Democrat'
     }
     , {
         quote: "For a republic, a 'good candidate' is one who accurately represents their constituents as a whole. This matches John Adams' philosophy on republican government, and Approval voting is incredibly accurate for being so simple."
