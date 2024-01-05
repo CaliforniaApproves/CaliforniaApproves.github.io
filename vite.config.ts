@@ -11,7 +11,7 @@ export default defineConfig({
         }
     }
     , build: {
-        commonjsOptions: { include: [] }
+        commonjsOptions: { include: ['node_modules/**'] }
     }
     , resolve: {
         dedupe: ["react", "react-dom", "react-router-dom"]
