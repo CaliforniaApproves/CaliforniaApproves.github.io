@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* ****** CAA Imports ****** */
 // UI
 
@@ -28,7 +29,7 @@ const FormSection = () => {
                 </div>
                 <div className='flex flex-col lg:flex-row lg:px-20'>
                     <div className='lg:w-1/2 flex justify-center'>
-                        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/california-approval-voting?default_interval=o&hide_donation_meter=true" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless={true} frameBorder="0" scrolling="no" height="900px" width="100%" style={{maxWidth: "500px", minWidth: "250px", maxHeight:"none!important"}}></iframe>
+                        <script src="https://donorbox.org/widget.js" data-paypalExpress="false"></script><iframe src="https://donorbox.org/embed/california-approval-voting?default_interval=o&hide_donation_meter=true" name="donorbox" data-allowpaymentrequest="allowpaymentrequest" seamless={true} frameBorder="0" scrolling="no" height="900px" width="100%" style={{maxWidth: "500px", minWidth: "250px", maxHeight:"none!important"}}></iframe>
 
                     </div>
                     <div className='text-white lg:w-1/2'>

@@ -7,14 +7,14 @@ import twistConfig from './config';
 
 const middlewares = [appRouterMiddleware, apiMiddleware];
 
-if (twistConfig.env === 'development' || (twistConfig.env === 'local-test' && !twistConfig.sandbox)) {
+if (twistConfig.env === 'development') {
 
     middlewares.push(createLogger({ collapsed: true }));
 }
 
 const store = configureStore({reducer: rootReducer, middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middlewares)});
 
-if (twistConfig.env === 'development' || (twistConfig.env === 'local-test' && !twistConfig.sandbox)) {
+if (twistConfig.env === 'development') {
     window.store = store;
 }
 

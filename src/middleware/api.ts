@@ -3,7 +3,7 @@ import { API_REQUEST_STATES } from '../constants/common';
 import { stringOrNull } from '../utils/type-checks';
 import * as rax from 'retry-axios';
 import twistConfig from '../config';
-import axios, { AxiosError, AxiosPromise, AxiosResponse, AxiosInstance, AxiosRequestConfig } from 'axios';
+import axios, { AxiosError, AxiosPromise, AxiosResponse, AxiosInstance, AxiosRequestConfig, AxiosHeaders, InternalAxiosRequestConfig } from 'axios';
 import { createAction } from '@reduxjs/toolkit';
 
 const domain = twistConfig.domain;
@@ -94,7 +94,7 @@ const apiMiddleware = ({ getState, dispatch }: any) => (next: (params: any) => a
         // TODO: consider additional logging
         let title;
         if (error.response) { // Errors with response from server
-            title = `A ${error.config.method?.toUpperCase()} to ${error.config.url?.replace(domain, "").replace("/api", "").toUpperCase()} returned a ${error.response.status}`;
+            title = `A ${error?.config?.method?.toUpperCase()} to ${error?.config?.url?.replace(domain, "").replace("/api", "").toUpperCase()} returned a ${error.response.status}`;
             if (action.requestController) action.requestController.status = API_REQUEST_STATES.FAILURE;
             const failureAction = createAction<Record<string, any>>(action.payload.nextActionType.FAILURE);
             dispatch({
@@ -161,6 +161,7 @@ const apiMiddleware = ({ getState, dispatch }: any) => (next: (params: any) => a
 
         // TODO: Handle aborts
         if (action.mock) {
+            const config: InternalAxiosRequestConfig = { method: requestConfig.method, url: requestConfig.url, data: requestConfig.data, headers: new AxiosHeaders() };
             apiPromise = new Promise((resolve, reject) => {
                 setTimeout(() => {
                   resolve({
@@ -168,7 +169,7 @@ const apiMiddleware = ({ getState, dispatch }: any) => (next: (params: any) => a
                     , status: 200
                     , statusText: 'ok'
                     , headers: {}
-                    , config: requestConfig
+                    , config
                   });
                 }, (Math.random() * (action.mockMaxTime - action.mockMinTime) + action.mockMinTime));
               });
