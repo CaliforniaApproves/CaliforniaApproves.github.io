@@ -7,15 +7,16 @@
     "build": "tsc && vite build",
     "serve": "vite preview --host 0.0.0.0 --port 8000",
     "lint": "eslint  ./src/",
-    "tsv": "tsc --v"
+    "tsv": "tsc --v",
+    "prepare": "husky"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
     "@headlessui/react": "1.7.14",
     "@heroicons/react": "2.0.18",
     "@reduxjs/toolkit": "1.9.3",
-    "@tailwindcss/forms": "0.5.3",
     "@tailwindcss/aspect-ratio": "0.4.2",
+    "@tailwindcss/forms": "0.5.3",
     "axios": "1.6.3",
     "classnames": "2.3.2",
     "dompurify": "3.0.6",
@@ -46,6 +47,7 @@
     "autoprefixer": "^10.4.16",
     "eslint": "8.56.0",
     "eslint-plugin-react": "^7.33.2",
+    "husky": "^9.0.7",
     "postcss": "8.4.31",
     "redux-logger": "3.0.6",
     "sass": "1.69.0",
