@@ -15,7 +15,7 @@ import update from 'immutability-helper';
 
 /* ****** Constants ****** */
 // Imported
-import { ReactComponent as Logo } from '../assets/icons/Circles/California-Approves-Logo-Circles-w-Checks-RGB.svg'
+import Logo from '../assets/icons/Circles/California-Approves-Logo-Circles-w-Checks-RGB.svg?react';
 import { ActionButton } from '../components/common/buttons';
 
 // Generated

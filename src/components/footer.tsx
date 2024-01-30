@@ -15,7 +15,7 @@ import update from 'immutability-helper';
 
 /* ****** Constants ****** */
 // Imported
-import { ReactComponent as Logo } from '../assets/icons/California-Approves-Logo-RGB-OL.svg';
+import Logo from '../assets/icons/California-Approves-Logo-RGB-OL.svg?react';
 
 // Generated
 const navigation = {

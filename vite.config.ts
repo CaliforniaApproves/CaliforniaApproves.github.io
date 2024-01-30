@@ -5,6 +5,7 @@ import svgr from 'vite-plugin-svgr';
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [reactRefresh(), svgr()]
+    , base: `/$viteBaseName/`
     , server: {
         fs: {
             allow: [searchForWorkspaceRoot(process.cwd()), '/node_modules/']

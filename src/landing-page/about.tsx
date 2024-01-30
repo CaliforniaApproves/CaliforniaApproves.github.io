@@ -13,7 +13,7 @@ import update from 'immutability-helper';
 
 /* ****** Assets ****** */
 import Background from '../assets/images/Illustrations-1.png';
-import { ReactComponent as Arrow } from '../assets/icons/Arrow.svg';
+import Arrow from '../assets/icons/Arrow.svg?react';
 
 /* ****** Constants ****** */
 // Imported

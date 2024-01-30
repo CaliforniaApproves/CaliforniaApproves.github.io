@@ -16,7 +16,7 @@ import strongArm from '../assets/images/Strong-Arm 1.png';
 
 /* ****** Constants ****** */
 // Imported
-import { ReactComponent as Arrow } from '../assets/icons/Long-Arrow.svg';
+import Arrow from '../assets/icons/Long-Arrow.svg?react';
 import Background from '../assets/images/Group-39.svg';
 
 // Generated

@@ -14,7 +14,7 @@ import update from 'immutability-helper';
 /* ****** Assets ****** */
 import Background from '../assets/images/Background-Pattern.svg';
 import LightBox from '../assets/placeholders/Lightbox.png';
-import { ReactComponent as Arrow } from '../assets/icons/Arrow.svg';
+import Arrow from '../assets/icons/Arrow.svg?react';
 
 /* ****** Constants ****** */
 // Imported

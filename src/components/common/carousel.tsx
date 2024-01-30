@@ -12,8 +12,8 @@ import update from 'immutability-helper';
 import classNames from 'classnames';
 
 /* ****** Assets ****** */
-import { ReactComponent as RightArrow } from '../../assets/icons/Arrow.svg';
-import { ReactComponent as LeftArrow } from '../../assets/icons/Back-Arrow.svg';
+import RightArrow from '../../assets/icons/Arrow.svg?react';
+import LeftArrow from '../../assets/icons/Back-Arrow.svg?react';
 
 
 /* ****** Constants ****** */

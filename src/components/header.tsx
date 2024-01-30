@@ -23,7 +23,7 @@ import {
     , PlayIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, Bars3Icon } from '@heroicons/react/20/solid'
-import { ReactComponent as Logo } from '../assets/icons/California-Approves-Logo-RGB-OL.svg';
+import Logo from '../assets/icons/California-Approves-Logo-RGB-OL.svg?react';
 
 type MenuDropDown = {
     name: string;
