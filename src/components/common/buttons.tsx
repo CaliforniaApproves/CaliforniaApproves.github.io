@@ -21,7 +21,7 @@ type ButtonVariant = 'solid'|'outlined'|'text';
 type ButtonColor = 'orange'|'purple'|'green'|'black';
 type ButtonSize = 'sm'|'lg';
 
-type ButtonProps = {
+type ButtonProps = JSX.IntrinsicElements["button"] & {
     variant: ButtonVariant;
     color: ButtonColor;
     size?: ButtonSize
@@ -29,7 +29,7 @@ type ButtonProps = {
 }
 
 type ActionButtonProps = ButtonProps & {
-    onClick: () => void;
+    onClick?: () => void;
 };
 
 export const ActionButton = ({variant, color, size='sm', onClick, children, className=''}: PropsWithChildren<ActionButtonProps>) => {
@@ -61,9 +61,9 @@ export const ActionButton = ({variant, color, size='sm', onClick, children, clas
         , className
     );
     return (
-        <div className={classNames} onClick={onClick}>
+        <button className={classNames} onClick={onClick}>
             {children}
-        </div>
+        </button>
     );
 }
 
