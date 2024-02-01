@@ -32,7 +32,7 @@ const MailingForm = () => {
                 We are creating a movement for a better democracy in California. Sign up for our newsletter to stay up to date on news, initiatives, ballot reforms and more 
             </p>
             <br/>
-            <div id="mc_embed_signup">
+            <div id="mc_embed_signup" className='w-full'>
                 <form
                     action="https://californiaapproves.us5.list-manage.com/subscribe/post?u=b4aa7540a62457c043ff00e36&amp;id=dddf3d641c&amp;f_id=003abee6f0"
                     method="post"
@@ -42,7 +42,7 @@ const MailingForm = () => {
                     target="_self"
                 >
                     <div id="mc_embed_signup_scroll">
-                        <div id="mc-email-input-wrapper" className="mc-field-group" style={{height: "45px"}}>
+                        <div id="mc-email-input-wrapper" className="mc-field-group">
                             <Input
                                 color="purple"
                                 value={email}
@@ -69,7 +69,7 @@ const MailingForm = () => {
                             ></div>
                         </div>
                         {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
-                        <div style={{ position: "absolute", left: '-5000px'}}aria-hidden="true">
+                        <div style={{ position: "absolute", left: '-5000px'}} aria-hidden="true">
                             <input
                                 type="text"
                                 name="b_b4aa7540a62457c043ff00e36_dddf3d641c"
@@ -77,11 +77,11 @@ const MailingForm = () => {
                                 value=""
                             />
                         </div>
-                        <div className="clear" style={{marginTop: "1em"}}>
+                        <div className="mt-4">
                             <ActionButton
                                 color='purple'
                                 variant='outlined'
-                                className="text-purple"
+                                className="text-purple mx-auto"
                                 size='lg'
                                 name="subscribe"
                                 id="mc-embedded-subscribe"
