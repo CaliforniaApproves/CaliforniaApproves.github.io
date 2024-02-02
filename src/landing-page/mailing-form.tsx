@@ -25,10 +25,10 @@ const MailingForm = () => {
 
     return (
         <div className='bg-white border-purple rounded-[50px] border-[6px] p-12 text-center flex flex-col items-center'>
-            <h2 className='truncate text-green'>
+            <h2 className='text-green'>
                 Bring Approval <br/>Voting To California
             </h2>
-            <p className='text-small'>
+            <p className='text-small mt-2'>
                 We are creating a movement for a better democracy in California. Sign up for our newsletter to stay up to date on news, initiatives, ballot reforms and more 
             </p>
             <br/>
