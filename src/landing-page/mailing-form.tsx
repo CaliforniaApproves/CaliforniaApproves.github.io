@@ -50,6 +50,7 @@ const MailingForm = () => {
                                 label="email"
                                 labelHidden={true}
                                 type='email'
+                                name="EMAIL"
                                 placeholder='Enter your email'
                                 className='w-full required email'
                                 id="mce-EMAIL"
