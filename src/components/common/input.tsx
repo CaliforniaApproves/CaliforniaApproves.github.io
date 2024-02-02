@@ -30,7 +30,7 @@ type InputProps = JSX.IntrinsicElements["input"] & {
 };
 
 // create a component
-const Input = ({value, setValue, color, type, label, placeholder, labelHidden=false, className='', id, required=false}: PropsWithChildren<InputProps>) => {
+const Input = ({value, setValue, color, type, label, placeholder, labelHidden=false, className='', id, required=false, name}: PropsWithChildren<InputProps>) => {
     return (
         <div className={classnames(
             'caa-input'
@@ -44,7 +44,7 @@ const Input = ({value, setValue, color, type, label, placeholder, labelHidden=fa
             <input
                 id={id}
                 type={type}
-                name={label}
+                name={name || label}
                 className={classnames(
                     "block w-full rounded-2xl border-0 p-3 text-center text-black shadow-sm ring-1 ring-inset placeholder:text-schist-high focus:ring-2 focus:ring-inset sm:text-sm lg:text-base sm:leading-6 bg-schist"
                     , {
