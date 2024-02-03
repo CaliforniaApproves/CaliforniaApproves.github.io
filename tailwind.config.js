@@ -78,7 +78,6 @@ module.exports = {
         require('@tailwindcss/forms')({
             strategy: 'class'
         })
-        , require('@tailwindcss/aspect-ratio')
         , plugin(function ({ addBase, theme }) {
             addBase({
                 'h1': { fontSize: '4rem', fontWeight: 700, lineHeight: '100%' }

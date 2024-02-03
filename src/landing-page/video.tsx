@@ -24,6 +24,7 @@ import Arrow from '../assets/icons/Arrow.svg?react';
 // create a component
 const Video = () => {
     return (
+        
         <div
             className="caa-home-page-video w-full flex flex-col items-center justify-center py-16 px-8"
             style={{
@@ -32,7 +33,12 @@ const Video = () => {
                 , backgroundRepeat: 'no-repeat'
             }}
         >
-            <img src={LightBox} alt="video placeholder"/>
+            <iframe src="https://www.youtube.com/embed/m8VXIIaC9Zw?si=qdEGTigmYoPaJi-p"
+                    className="w-full lg:w-3/4 aspect-video"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    frameBorder="0"
+                    allowFullScreen></iframe>
             <br/>
             <p className='text-large-bold text-center m-auto max-w-[768px]'>
                 Approval voting is a single-winner voting method that allows voters to choose as many candidates as they wish. The candidate with the most votes wins.
