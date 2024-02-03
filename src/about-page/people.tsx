@@ -14,7 +14,7 @@ import update from 'immutability-helper';
 /* ****** Assets ****** */
 import alanProfile from '../assets/images/Alan-Savage-Profile.jpg';
 import jeffProfile from '../assets/images/Jeff-Justice-Profile.jpg';
-import kevinProfile from '../assets/images/Kevin-Gray-Profile.jpg';
+import kevinProfile from '../assets/images/Kevin-Gray-Profile.webp';
 
 /* ****** Constants ****** */
 // Imported
