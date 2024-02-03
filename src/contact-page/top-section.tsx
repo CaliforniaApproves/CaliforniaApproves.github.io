@@ -11,7 +11,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import Background from '../assets/images/volunteer_transparent.png';
+import Background from '../assets/images/volunteer_transparent.webp';
 
 /* ****** Constants ****** */
 // Imported
