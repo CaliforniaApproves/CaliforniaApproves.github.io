@@ -12,7 +12,7 @@ import React from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import Background from '../assets/images/Illustrations-1.png';
+import Background from '../assets/images/Illustrations-1.webp';
 import Arrow from '../assets/icons/Arrow.svg?react';
 
 /* ****** Constants ****** */
