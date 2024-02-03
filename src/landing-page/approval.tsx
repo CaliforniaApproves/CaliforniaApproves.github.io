@@ -11,7 +11,7 @@ import React from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import Ballot from '../assets/images/Rectangle-102.png';
+import Ballot from '../assets/images/Rectangle-102.webp';
 import CheckMark from '../assets/icons/Yellow-Check.svg?react';
 
 /* ****** Constants ****** */
