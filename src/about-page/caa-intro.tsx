@@ -11,7 +11,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import activists from '../assets/images/activists.jpg';
+import activists from '../assets/images/activists.webp';
 import Background from '../assets/images/Background-Pattern.svg';
 
 /* ****** Constants ****** */
