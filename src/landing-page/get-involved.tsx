@@ -14,7 +14,7 @@ import update from 'immutability-helper';
 
 /* ****** Constants ****** */
 // Imported
-import PeopleTalking from '../assets/images/people-talking-clear.png';
+import PeopleTalking from '../assets/images/people-talking-clear.webp';
 import Voting from '../assets/images/votes-clear.png';
 import Polling from '../assets/images/polling-place-clear.png';
 
