@@ -16,7 +16,7 @@ import update from 'immutability-helper';
 // Imported
 import PeopleTalking from '../assets/images/people-talking-clear.webp';
 import Voting from '../assets/images/votes-clear.webp';
-import Polling from '../assets/images/polling-place-clear.png';
+import Polling from '../assets/images/polling-place-clear.webp';
 
 // Generated
 
