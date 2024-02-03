@@ -11,7 +11,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import voteMatters from '../assets/images/vote-matters.jpg';
+import voteMatters from '../assets/images/vote-matters.webp';
 
 /* ****** Constants ****** */
 // Imported
