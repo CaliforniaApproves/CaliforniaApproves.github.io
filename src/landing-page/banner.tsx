@@ -12,7 +12,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import strongArm from '../assets/images/Strong-Arm 1.png';
+import strongArm from '../assets/images/Strong-Arm 1.webp';
 
 /* ****** Constants ****** */
 // Imported
