@@ -11,7 +11,7 @@ import React, { PropsWithChildren } from 'react'
 import update from 'immutability-helper';
 
 /* ****** Assets ****** */
-import bridge from '../assets/images/bridge.jpg';
+import bridge from '../assets/images/bridge.webp';
 
 /* ****** Constants ****** */
 // Imported
