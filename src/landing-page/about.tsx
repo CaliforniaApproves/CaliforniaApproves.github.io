@@ -35,7 +35,7 @@ const About = () => {
                 How We Are Making Waves
             </h1>
             <div className='flex flex-col lg:flex-row align-center'>
-                <div className='bg-purple text-white lg:w-80 p-[50px] rounded-t-2xl lg:rounded-t-none lg:rounded-bl-2xl h-[80%] lg:mb-10'>
+                <div className='bg-purple text-white lg:w-80 py-[50px] px-6 rounded-t-2xl lg:rounded-t-none lg:rounded-bl-2xl h-[80%] lg:mb-10'>
                     <h3>
                         Education
                     </h3>
@@ -53,7 +53,7 @@ const About = () => {
                         <Arrow className="fill-current w-6 h-6 ml-2"/>
                     </Link>
                 </div>
-                <div className='bg-orange text-white lg:w-80 p-[50px] lg:rounded-b-2xl'>
+                <div className='bg-orange text-white lg:w-80 py-[50px] px-6 lg:rounded-b-2xl'>
                     <h3>
                         Campaigning
                     </h3>
@@ -70,7 +70,7 @@ const About = () => {
                         <Arrow className="fill-current w-6 h-6 ml-2"/>
                     </Link>
                 </div>
-                <div className='bg-green text-white lg:w-80 p-[50px] rounded-b-2xl lg:rounded-bl-none lg:rounded-br-2xl h-[80%] lg:mb-10'>
+                <div className='bg-green text-white lg:w-80 py-[50px] px-6 rounded-b-2xl lg:rounded-bl-none lg:rounded-br-2xl h-[80%] lg:mb-10'>
                     <h3>
                         Community
                     </h3>
