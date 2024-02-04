@@ -36,10 +36,10 @@ const About = () => {
             </h1>
             <div className='flex flex-col lg:flex-row align-center'>
                 <div className='bg-purple text-white lg:w-80 p-[50px] rounded-t-2xl lg:rounded-t-none lg:rounded-bl-2xl h-[80%] lg:mb-10'>
-                    <h2>
+                    <h3>
                         Education
-                    </h2>
-                    <p className="text-base">
+                    </h3>
+                    <p className="text-base pt-3">
                         The road to better democracy starts with awareness. We offer live expert-led presentations for political organizations, professional unions, and more.
                     </p>
                     <br/>
@@ -54,10 +54,10 @@ const About = () => {
                     </Link>
                 </div>
                 <div className='bg-orange text-white lg:w-80 p-[50px] lg:rounded-b-2xl'>
-                    <h2>
+                    <h3>
                         Campaigning
-                    </h2>
-                    <p className="text-base">
+                    </h3>
+                    <p className="text-base pt-3">
                         Let us help bring approval voting to your city. As an FPPC-approved committee, we are the only organization in California that can directly fund your campaign.
                     </p>
                     <br/>
@@ -71,10 +71,10 @@ const About = () => {
                     </Link>
                 </div>
                 <div className='bg-green text-white lg:w-80 p-[50px] rounded-b-2xl lg:rounded-bl-none lg:rounded-br-2xl h-[80%] lg:mb-10'>
-                    <h2>
+                    <h3>
                         Community
-                    </h2>
-                    <p className="text-base">
+                    </h3>
+                    <p className="text-base pt-3">
                         Live in an area where partisanship has made the electoral process unrepresentative of your community? Use our platform to share your story and get connected.
                     </p>
                     <br/>
