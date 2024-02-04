@@ -27,12 +27,11 @@ const FormSection = () => {
                     <h1 className='mb-4'>Donate to California Approves</h1>
                     <h5>Your donation will help bring better democracy to California</h5>
                 </div>
-                <div className='flex flex-col lg:flex-row lg:px-20'>
-                    <div className='lg:w-1/2 flex justify-center'>
-                        <script src="https://donorbox.org/widget.js" data-paypalExpress="false"></script><iframe src="https://donorbox.org/embed/california-approval-voting?default_interval=o&hide_donation_meter=true" name="donorbox" data-allowpaymentrequest="allowpaymentrequest" seamless={true} frameBorder="0" scrolling="no" height="900px" width="100%" style={{maxWidth: "500px", minWidth: "250px", maxHeight:"none!important"}}></iframe>
-
+                <div className='grid grid-cols-1 lg:grid-cols-2'>
+                    <div className='flex justify-center'>
+                        <script src="https://donorbox.org/widget.js" data-paypalExpress="false"></script><iframe src="https://donorbox.org/embed/california-approval-voting?default_interval=o&hide_donation_meter=true" name="donorbox" data-allowpaymentrequest="allowpaymentrequest" seamless={true} frameBorder="0" scrolling="no" height="700px" width="100%" style={{maxWidth: "500px", minWidth: "250px", maxHeight:"none!important"}}></iframe>
                     </div>
-                    <div className='text-white lg:w-1/2'>
+                    <div className='text-white'>
                         <h2 className='mb-4'>We believe in a better democracy</h2>
                         <p className='text-base'>California Approves strives to make California elections more expressive and fair. We believe that voting systems shape voter and candidate behavior. Better voting systems let voters be more honest and incentivize candidates to better represent the electorate.</p>
                         <br/>
