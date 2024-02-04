@@ -1,5 +1,6 @@
 /* ****** CAA Imports ****** */
 // UI
+import Video from '../components/common/video';
 import Link from '../components/common/links';
 
 // Logic
@@ -22,7 +23,7 @@ import Arrow from '../assets/icons/Arrow.svg?react';
 // Generated
 
 // create a component
-const Video = () => {
+const LandingVideo = () => {
     return (
         
         <div
@@ -33,12 +34,9 @@ const Video = () => {
                 , backgroundRepeat: 'no-repeat'
             }}
         >
-            <iframe src="https://www.youtube.com/embed/m8VXIIaC9Zw?si=qdEGTigmYoPaJi-p"
-                    className="w-full lg:w-3/4 aspect-video"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    frameBorder="0"
-                    allowFullScreen></iframe>
+            <div className="w-full lg:w-3/4 aspect-video">
+                <Video embedId={"m8VXIIaC9Zw"} title={"Approval Voting: The easy way to elect better leaders"}/>
+            </div>
             <br/>
             <p className='text-large-bold text-center m-auto max-w-[768px]'>
                 Approval voting is a single-winner voting method that allows voters to choose as many candidates as they wish. The candidate with the most votes wins.
@@ -57,4 +55,4 @@ const Video = () => {
 }
 
 //make this component available to the app
-export default Video
+export default LandingVideo
