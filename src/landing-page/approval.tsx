@@ -24,7 +24,7 @@ const AboutApproval = () => {
     return (
         <div className='bg-purple flex flex-col-reverse lg:flex-row justify-around text-white pt-28'>
             <img className="w-fit h-fit" src={Ballot}/>
-            <div className='flex flex-col max-w-full lg:max-w-[50%] px-6 lg:px-0 font-bold lg:font-normal pb-28'>
+            <div className='flex flex-col max-w-full gap-y-5 lg:max-w-[50%] px-6 lg:px-0 font-bold lg:font-normal pb-28'>
                 <h1 className='text-white'>
                     Simple, Effective and Affordable Reform
                 </h1>
