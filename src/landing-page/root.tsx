@@ -7,7 +7,7 @@ import Video from './video';
 import AboutApproval from './approval';
 import AboutUs from './about';
 import Quotes from './quotes';
-import News from './news';
+// import News from './news';
 import GetInvolved from './get-involved';
 
 // Logic
@@ -36,7 +36,7 @@ const LandingPage = () => {
             <AboutApproval/>
             <AboutUs/>
             <Quotes />
-            <News />
+            {/* <News /> */}
             <GetInvolved />
             <Footer />
         </div>

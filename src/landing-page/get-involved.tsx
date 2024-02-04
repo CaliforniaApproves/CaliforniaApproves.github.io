@@ -24,14 +24,14 @@ import Polling from '../assets/images/polling-place-clear.webp';
 const GetInvolved = () => {
     return (
         <div className='flex flex-col items-center mx-auto lg:px-10'>
-            <h4 className='text-purple text-center'>
+            <h4 className='text-purple text-center mt-16'>
                 READY TO GET INVOLVED?
             </h4>
             <h2 className='text-green text-center'>
                 Three Ways You Can Help
             </h2>
             <br/>
-            <div className='flex flex-col lg:flex-row justify-center text-white'>
+            <div className='flex flex-col mt-10 lg:flex-row justify-center text-white'>
                 <div
                     className='p-12 lg:w-1/3 lg:rounded-l-2xl'
                     style={{
