@@ -5,6 +5,8 @@
 
 /* ****** Other Imports ****** */
 // UI
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 // Logic
 import React, { PropsWithChildren } from 'react'
@@ -27,12 +29,8 @@ type VideoProps = {
 const Video = ({embedId, title, className}: PropsWithChildren<VideoProps>) => {
     return (
         <div className={classnames("video-responsive", {[className || '']: className != null})}>
-            <iframe
-                width="853"
-                height="480"
-                src={`https://www.youtube.com/embed/${embedId}`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+            <LiteYouTubeEmbed
+                id={`${embedId}`}
                 title={title}
             />
         </div>
