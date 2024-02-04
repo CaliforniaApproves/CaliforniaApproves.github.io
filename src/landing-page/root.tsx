@@ -17,7 +17,6 @@ import GetInvolved from './get-involved';
 
 // Logic
 import React from 'react'
-import update from 'immutability-helper';
 
 /* ****** Assets ****** */
 

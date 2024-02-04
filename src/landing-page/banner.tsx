@@ -8,8 +8,7 @@ import MailingForm from './mailing-form';
 // UI
 
 // Logic
-import React, { PropsWithChildren } from 'react'
-import update from 'immutability-helper';
+import React from 'react'
 
 /* ****** Assets ****** */
 import strongArm from '../assets/images/Strong-Arm 1.webp';

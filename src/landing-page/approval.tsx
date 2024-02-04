@@ -8,7 +8,6 @@
 
 // Logic
 import React from 'react'
-import update from 'immutability-helper';
 
 /* ****** Assets ****** */
 import Ballot from '../assets/images/Rectangle-102.webp';
