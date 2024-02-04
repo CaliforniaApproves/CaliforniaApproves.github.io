@@ -33,7 +33,7 @@ const Banner = () => {
             }}
         >
             <div className='m-auto px-8 pb-4 lg:pb-0'>
-                <img src={strongArm} alt="strong arm" className='aspect-[169/158]'/>
+                <img src={strongArm} alt="strong arm" width="338" height="316" className='aspect-[169/158]'/>
                 <h1 className='no-wrap text-green'>The <span className='text-purple'>Easiest</span> Way To Make</h1>
                 <h1 className='text-green'>The <span className='text-purple'>Biggest</span> Impact</h1>
                 <div className='static max-w-[500px]'>
