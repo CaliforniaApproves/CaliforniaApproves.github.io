@@ -8,8 +8,9 @@ import Link from '../components/common/links';
 // UI
 
 // Logic
-import React from 'react'
+import React, { useState } from 'react'
 import update from 'immutability-helper';
+import { usePopper } from 'react-popper';
 
 /* ****** Assets ****** */
 import Background from '../assets/images/Illustrations-1.webp';
@@ -22,6 +23,20 @@ import Arrow from '../assets/icons/Arrow.svg?react';
 
 // create a component
 const About = () => {
+    const [referenceElement, setReferenceElement] = useState<HTMLButtonElement | null>(null);
+    const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
+    const [isVisible, setIsVisible] = useState(false);
+    const { styles, attributes } = usePopper(referenceElement, popperElement, {
+        placement: 'auto-start'
+        , modifiers: [
+            { name: 'offset', options: { offset: [0, 20] } }
+        ],
+    });
+
+    const togglePopover = () => {
+        setIsVisible(!isVisible);
+    };
+
     return (
         <div
             className='flex flex-col align-center items-center pb-28 px-8'
@@ -61,14 +76,27 @@ const About = () => {
                         Let us help bring approval voting to your city. As an FPPC-approved committee, we are the only organization in California that can directly fund your campaign.
                     </p>
                     <br/>
-                    <Link
-                        to='#'
+                    <button
+                        type="button"
                         color="white"
                         className='italic underline flex flex-row text-small align-center items-center text-center'
+                        ref={setReferenceElement}
+                        onClick={togglePopover}
                     >
                         LEARN MORE
                         <Arrow className="fill-current w-6 h-6 ml-2"/>
-                    </Link>
+                    </button>
+                    {isVisible && (
+                        <div ref={setPopperElement}
+                            className='bg-white text-black text-base w-3/4 max-w-96 mx-auto border border-black rounded-lg p-4'
+                             style={styles.popper}
+                             {...attributes.popper}>
+                            The requirements for running an approval campaign in a city vary depending on the laws of
+                            that city. At a minimum, there must be a city charter and someone living in the city willing
+                            to sign the application to circulate a petition. If you're interested a 
+                            campaign <Link to="mailto:info@californiaapproves.org" target="_blank" className='underline' color="black">contact us</Link>!
+                        </div> 
+                    )}
                 </div>
                 <div className='bg-green text-white lg:w-80 py-[50px] px-6 rounded-b-2xl lg:rounded-bl-none lg:rounded-br-2xl h-[80%] lg:mb-10'>
                     <h3>
