@@ -32,7 +32,7 @@ const VideoSection = () => {
             <h2 className='mb-10 text-center'>What is Approval Voting?</h2>
             <div className='flex flex-col lg:flex-row'>
                 <div className='lg:w-1/2'>
-                    <Video embedId={"db6Syys2fmE"} title={"What Is Approval Voting?"}/>
+                    <Video embedId={"K7kDlctGsQM"} title={"What Is Approval Voting?"}/>
                 </div>
                 <div className='lg:w-1/2 px-8 my-auto'>
                     <h5>When you enter the polling booth, you can only vote for one candidate. But only being able to vote for one candidate causes lots of problems:</h5>
