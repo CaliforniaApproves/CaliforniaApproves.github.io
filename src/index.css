@@ -10,3 +10,78 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700; /* bold */
+}
+
+h1 { /* H1 Mobile */
+    font-size: 3rem;
+    line-height: 100%;
+}
+
+h2 { /* H2 Mobile */
+    font-size: 2.5rem;
+    line-height: 90%;
+}
+
+h3 { /* H3 Mobile */
+    font-size: 2rem;
+    line-height: 90%;
+}
+
+h4 { /* H4 Mobile */
+    font-size: 1.5rem;
+    line-height: 90%;
+}
+
+h5 { /* H5 Mobile */
+    font-size: 1.25rem;
+    line-height: 33px;
+}
+
+h6 { /* Undefined in Figma */
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    /* These are all named H1-H5 in Figma */
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 
+TODO(alan): Map these styles from the Figma design to Tailwind and vice-versa
+Lrg Bold Paragraph
+Lrg Paragraph
+Med Paragraph
+Sml Paragraph
+Lrg Bold Link
+Lrg Link
+Med Link
+Sml Link
+Mobile Lrg Bold Parag
+Mobile Lrg Parag
+Mobile Med Parag
+Mobile Sml Parag
+Italic
+Mobile Paragraph List
+Large Paragraph List
+*/

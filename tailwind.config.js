@@ -78,15 +78,5 @@ module.exports = {
         require('@tailwindcss/forms')({
             strategy: 'class'
         })
-        , plugin(function ({ addBase, theme }) {
-            addBase({
-                'h1': { fontSize: '4rem', fontWeight: 700, lineHeight: '100%' }
-                , 'h2': { fontSize: '3rem', fontWeight: 700, lineHeight: '100%' }
-                , 'h3': { fontSize: '2.5rem', fontWeight: 700, lineHeight: '90%' }
-                , 'h4': { fontSize: '2rem', fontWeight: 700, lineHeight: '90%' }
-                , 'h5': { fontSize: '1.5rem', fontWeight: 700, lineHeight: '33px' }
-                , 'h6': { fontSize: '1rem', fontWeight: 700 }
-            });
-        })
     ]
 };
