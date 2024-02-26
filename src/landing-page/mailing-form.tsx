@@ -75,7 +75,7 @@ const MailingForm = () => {
                                 type="text"
                                 name="b_b4aa7540a62457c043ff00e36_dddf3d641c"
                                 tabIndex={-1}
-                                value=""
+                                defaultValue=""
                             />
                         </div>
                         <div className="mt-4">
