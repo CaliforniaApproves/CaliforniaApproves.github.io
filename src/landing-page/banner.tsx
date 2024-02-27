@@ -31,11 +31,13 @@ const Banner = () => {
                 , backgroundRepeat: 'no-repeat'
             }}
         >
-            <div className='m-auto px-8 pb-4 lg:pb-0'>
+            <div className='m-auto px-8 pb-14 lg:pb-0'>
                 <img src={strongArm} alt="strong arm" width="338" height="316" className='aspect-[169/158]'/>
-                <h1 className='text-green'>The <span className='text-purple'>Easiest</span> Way To Make
-                The <span className='text-purple'>Biggest</span> Impact</h1>
-                <div className='static max-w-[500px]'>
+                <h1 className='text-green banner-drop-shadow'>
+                    The <span className='text-purple'>Easiest</span> Way To Make <br className='hidden lg:inline'/>
+                    The <span className='text-purple'>Biggest</span> Impact
+                </h1>
+                <div className='static max-w-[500px] mt-9'>
                     <Arrow className='absolute'/>
                     <p className='text-large-bold flex flex-row indent-24 font-bold lg:font-normal'>
                         Approval voting gives voters the power to support multiple candidates equally so that stronger representatives with broad support are always elected.
