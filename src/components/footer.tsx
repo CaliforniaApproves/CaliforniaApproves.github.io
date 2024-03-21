@@ -137,6 +137,7 @@ const Footer = () => {
                 </div>
                 <div className="mt-16 border-t border-white/10 py-8 lg:mt-24 flex flex-row justify-between">
                     <p className="text-xs leading-5">&copy; 2023 California Approves. All right reserved.</p>
+                    <p className="text-xs leading-5">This site is funded by California Approves: FPPC#  1440633</p>
                     <div className='flex flex-row'>
                         <Link
                             to='#'
