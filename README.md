@@ -16,7 +16,7 @@ available on localhost:3000
 Deploy by pushing commits to the appropriate repository branch:
 
 - main branch at `github.com:CaliforniaApproves/CaliforniaApproves.github.io`
-- prod branch at `github.com:CaliforniaApproves/californiaapproves.org`
+- main branch at `github.com:CaliforniaApproves/californiaapproves.org`
 
 Configuration is in `.github/workflows`.
 
@@ -48,7 +48,6 @@ git remote add prod git@github.com:CaliforniaApproves/californiaapproves.org
 
 **WARNING: This will update the main website! Test your changes on staging first!**
 
-1. `git push prod {src ref}:prod` e.g. `git push prod staging:prod` to push the
-   local staging branch to prod.
+1. `git push prod main`
 2. Observe the workflow progress on the [Actions page](https://github.com/CaliforniaApproves/californiaapproves.org/actions)
 3. Check that `californiaapproves.org` has your changes
