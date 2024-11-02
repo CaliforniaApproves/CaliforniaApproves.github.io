@@ -2,12 +2,27 @@
 
 React Based Website for CaliforniaApproves.org.
 
-## Run Locally
+# Development
 
-```bash
+## Run with Podman + VS Code Dev Container
+* Install Podman
+  If using Podman ensure VSCode settings has the following:
+
+```
+  "dev.containers.dockerPath": "podman",
+  "dev.containers.dockerComposePath": "podman-compose",
+  "dev.containers.dockerSocketPath": "unix:///run/user/1000/podman/docker.sock",
+```
+
+* Install Dev Container Extension
+* Choose "Open Folder In Dev Container"
+* In VSCode Terminal run "npx vite"
+* Open browser to http://localhost:5173
+
+## Run directly with NPM
+Install Node
 npm install
 npm run dev
-```
 
 available on localhost:3000
 
