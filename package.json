@@ -47,7 +47,7 @@
     "autoprefixer": "^10.4.19",
     "eslint": "8.56.0",
     "eslint-plugin-react": "^7.33.2",
-    "husky": "^9.0.10",
+    "husky": "^9.1.6",
     "postcss": "8.4.31",
     "redux-logger": "3.0.6",
     "sass": "1.70.0",
